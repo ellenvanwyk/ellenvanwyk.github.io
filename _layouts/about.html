@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+ {% include head.html %}
+
+	<body>
+
+	{% include navbar.html %}
+
+		<div class="page-content">
+			<div class="wrapper container-md">
+
+				<img class="w-100" src="{{ page.image }}">
+
+				<div class="row">
+					<div class="col-sm-8">
+						{{ content }}
+					</div>
+
+					<div class="col-sm-4">
+						<div class = "vcard link-icons">
+							<h3>
+							Get in touch
+							</h3>
+							<p>ejvw(at)berkeley(dot)edu</p>
+							<h3>
+							Elsewhere on the web
+							</h3>
+							<a href = "https://github.com/ellenvanwyk"><i class="fab fa-github"></i></a>
+							<a href = "https://www.linkedin.com/in/ellen-van-wyk-2441b387"><i class="fab fa-linkedin-in"></i></a>
+							<a href = "http://sketchesandsketches.tumblr.com/"><i class="fab fa-tumblr"></i></a>
+
+							<h3>
+							Resume
+							</h3>
+							<a class = "linkout" href = "vanwykResume.pdf">
+							<i class="fas fa-file"></i>
+							</a>
+
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	{% include footer.html %}
+	</body>
+</html>

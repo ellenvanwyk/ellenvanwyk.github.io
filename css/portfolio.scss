@@ -1,8 +1,120 @@
 ---
 ---
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic');
+
+
+@import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "root";
+@import "reboot";
+@import "type";
+@import "images";
+@import "code";
+@import "grid";
+@import "tables";
+@import "forms";
+@import "buttons";
+@import "transitions";
+@import "dropdown";
+@import "button-group";
+@import "input-group";
+@import "custom-forms";
+@import "nav";
+@import "navbar";
+@import "card";
+@import "breadcrumb";
+@import "pagination";
+@import "badge";
+@import "jumbotron";
+@import "alert";
+@import "progress";
+@import "media";
+@import "list-group";
+@import "close";
+@import "modal";
+@import "tooltip";
+@import "popover";
+@import "carousel";
+@import "utilities";
+@import "print";
+
+//Typography
+h1, h2, h3, h4, h5, h6{
+	font-family: "Montserrat";
+	color: #404040;
+}
+
+body{
+	color: #212121;
+	font-family: 'Open Sans',sans-serif;
+}
+
+p{
+	line-height: 1.5em;
+}
+
+
 
 //Logo
 .navbar-brand img{
-	height: 40px;
+	height: 30px;
 }
+
+
+//Layout
+.container-lg {
+  max-width: 1300px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+}
+
+.container-md {
+  max-width: 760px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 40px;
+}
+
+//Nav
+
+.navbar{
+	background-color: rgba(255,255,255,0.9);
+	border-bottom: 1px solid rgba(0,0,0,0.07);
+	padding-left: 40px;
+	padding-right: 40px;
+}
+
+
+//Article
+h1.page-heading{
+	margin-top: 60px;
+}
+
+//Home
+.home {
+	h1{
+		font-size: 1.8em;
+		line-height: 1.5em;
+	}
+	.post-link img {
+		@include border-radius(4px);
+		@include transition(.2s);
+
+		&:hover{
+			opacity: .7;
+		}
+	}
+
+	a.post-link:hover{
+		text-decoration: none;
+	}
+}
+
+
+
+
