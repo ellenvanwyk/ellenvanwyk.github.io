@@ -8,7 +8,7 @@
 	{% include navbar.html %}
 
 		<div class="page-content">
-			<div class="wrapper container-md">
+			<div class="wrapper container-md article">
 
 				<img class="w-100" src="{{ page.image }}">
 
@@ -17,18 +17,18 @@
 						{{ content }}
 					</div>
 
-					<div class="col-sm-4">
+					<div class="col-sm-4" style="margin-top:50px;">
 						<div class = "vcard link-icons">
 							<h3>
 							Get in touch
 							</h3>
-							<p>ejvw(at)berkeley(dot)edu</p>
+							<p>ejvw(at)berkeley(dot)edu
 							<h3>
 							Elsewhere on the web
 							</h3>
 							<a href = "https://github.com/ellenvanwyk"><i class="fab fa-github"></i></a>
 							<a href = "https://www.linkedin.com/in/ellen-van-wyk-2441b387"><i class="fab fa-linkedin-in"></i></a>
-							<a href = "http://sketchesandsketches.tumblr.com/"><i class="fab fa-tumblr"></i></a>
+							<a href = "http://interprettounderstand.tumblr.com/"><i class="fab fa-tumblr"></i></a>
 
 							<h3>
 							Resume
@@ -44,4 +44,5 @@
 			</div>
 	{% include footer.html %}
 	</body>
+	{% include analytics.html %}
 </html>

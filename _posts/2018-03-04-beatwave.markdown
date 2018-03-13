@@ -2,8 +2,11 @@
 layout: post
 title:  Beatwave
 date:   2018-03-10 11:15:38 -0800
+tags:
+  - UX Design + Research
+  - Illustration
 categories: UX Design + Research, Illustration
-image: assets/home-images/beatwave.png
+image: /assets/home-images/beatwave.png
 ---
 
 # Beatwave: a motion tracking DJ App
@@ -30,13 +33,17 @@ We also concluded that there are many types of DJs and many ways to manipulate s
 
 Though Leap was our initial strategy, we did not want to exclude different technologies that may serve DJs better.  For the Myo prototype, we intended to leverage Myo&rsquo;s gesture recognition technology to trigger sound clips.
 <br>
-<img src= "images/paper_prototype_2.jpg" class = "displayed bigImg" alt = "paper prototype">
+<img src= "/assets/beatwave/paper_prototype_2.jpg" class = "displayed bigImg" alt = "paper prototype">
+
 <figcaption><span>My paper prototype known as the "Dual Grid" protoype.  Users map sound effects to the axes on the grids.  The user changes the amout of effect applied to the song using Leap where pinching is like clicking and an open hand is like hovering.  They transition between songs using the Mixer.</span></figcaption>
-<img src= "images/leapMotionStoryBoard.png" class = "displayed" alt = "paper prototype" style = "width:100%;height:auto">
+
+<img src= "/assets/beatwave/leapMotionStoryBoard.png" class = "displayed" alt = "paper prototype" style = "width:100%;height:auto">
 <figcaption class = "center"><span>A usage scenario for the predecessor to the Dual Grid; the single grid.</span></figcaption>
 <br>
-<img src= "images/3dshspes.jpg" class = "displayed bigImg" alt = "paper prototype" >
+<img src= "/assets/beatwave/3dshspes.jpg" class = "displayed bigImg" alt = "paper prototype" >
+
 <figcaption class = "center"><span>A usage scenario for my teammate&rsquo;s prototype, the "BlobMaster".</span></figcaption>
+
 After testing the dual grid paper prototype, we found that users liked the control it afforded and found the interaction intuitive. We decided to move forward with that version, and I developed a hi fi Justinmind prototype for the setup interface while my team mates implemented two different functional prototypes, one with Leap and one with Myo. Since our paper prototype users found the setup screen confusing, I integrated it into the main screen in the Justinmind version. Myo also tracks forearm angle, so we used it to modulate effects. 
 
 
@@ -48,5 +55,7 @@ We decided to move forward with Myo for the following reasons:
 * <span class = "bullet-lead">Fun! </span>Ultimately DJs found Myo more fun than Leap. We hypothesize this was partially due the fact that Leap requires more visual feedback and concentration to stay within bounds of the screen.
 * <span class = "bullet-lead">Minimize fatal flaws: </span>Both Leap&rsquo;s calibration lag time and Myo&rsquo;s poor gesture recognition would seriously disrupt a performance. While we couldn&rsquo;t design around Leap&rsquo;s limitations, we could optimize Myo by avoiding unreliable gestures.
 
-<p>We also rejected a full screen UI in favor of a narrow one that wouldn&rsquo;t obscure the DJ software and music visualizations. Below is the final design iteration. From our final user testing, DJs found that Beatwave exceeded their existing hardware for its performative qualities and enjoyability. 
-<img src = 'images/newInterface.png' class = "displayed bigImg" alt = "myo prototype">
+
+We also rejected a full screen UI in favor of a narrow one that wouldn&rsquo;t obscure the DJ software and music visualizations. Below is the final design iteration. From our final user testing, DJs found that Beatwave exceeded their existing hardware for its performative qualities and enjoyability. 
+
+<img src = '/assets/beatwave/newInterface.png' class = "displayed bigImg" alt = "myo prototype">

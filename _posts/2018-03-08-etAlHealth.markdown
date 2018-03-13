@@ -3,14 +3,16 @@ layout: post
 title:  et al Health
 date:   2018-03-10 11:15:38 -0800
 tags:
-  - apple
-  - banana
-  - orange
-image: assets/home-images/etal.png
+  - UX
+  - Visual + Front End Design
+  - Research
+  - HTML/CSS
+image: /assets/home-images/etal.png
 ---
 
-# et al Health</h1>	
-<img src = "images/home-images/etal-header.png" style = "width:100%;">
+# et al Health
+<img 
+src = "/assets/home-images/etal-header.png" style = "width:100%;">
 
 ## Overview
 
@@ -21,7 +23,7 @@ et al health is a search engine to help people with rare diseases find a qualifi
 ## Identifying A Need
 
 <figure  class = "right-panel">
-	<img src= "images/flowchart.png" alt = "flow chart of et al health data" >
+	<img src="/assets/etalhealth/flowchart.png" alt = "flow chart of et al health data" >
 	 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
 </figure>
 
@@ -52,9 +54,9 @@ Since users bring a wide range of skills and knowledge to our site, it was impor
     <td>A family member or close friend has a condition, and they are assisting in finding treatment. They spend significant amounts of their free time doing research on the condition.</td>
   </tr>
   <tr>
-    <td><img src= "images/personaPatient.png" alt = "patient portrait" style="width:200px;height:auto;"></td>
-    <td><img src= "images/personaDoctor.png" alt = "doctor portrait" style="width:200px;height:auto;"></td>
-    <td><img src= "images/personaParent.png" alt = "parent portrait" style="width:200px;height:auto;"></td>
+    <td><img src="/assets/etalhealth/personaPatient.png" alt = "patient portrait" style="width:200px;height:auto;"></td>
+    <td><img src="/assets/etalhealth/personaDoctor.png" alt = "doctor portrait" style="width:200px;height:auto;"></td>
+    <td><img src="/assets/etalhealth/personaParent.png" alt = "parent portrait" style="width:200px;height:auto;"></td>
   </tr>
    <tr>
     <td><span class = "quote">&ldquo;No one can relate; they haven't even heard about it. The diagnosis took months and finding a doctor turned out to be a struggle as well. &rdquo;</span></td>
@@ -65,25 +67,19 @@ Since users bring a wide range of skills and knowledge to our site, it was impor
   </tr>
   <tr>
     <td>
-	    
-		* Tired and/or otherwise incapacitated
-		* Has geographic concerns - worried about traveling far for treatment
-		* Knows a little about medicine
-		
-	</td>
+  		<li> Tired and/or otherwise incapacitated</li>
+  		<li> Has geographic concerns - worried about traveling far for treatment</li>
+  		<li> Knows a little about medicine</li>
+    </td>
     <td>
-    	
-		    <li>Has too many patients to care for
-		* Averse to new technology/time wastes
-		* Medical expert; but not up to date in the latest/obscure fields
-		
-	</td>
+      <li>Has too many patients to care for</li>
+      <li>Averse to new technology/time wastes</li>
+      <li>Medical expert; but not up to date in the latest/obscure fields</li>
+    </td>
     <td>
-    	
-		    <li>No medical background but doing lots of medical research
-		* Tenacious; not afraid to challenge doctors and make demands
-		* Bouncing between care providers
-		
+      <li>No medical background but doing lots of medical research</li>
+      <li>Tenacious; not afraid to challenge doctors and make demands</li>
+      <li>Bouncing between care providers</li>
     </td>
   </tr>
 </table> 
