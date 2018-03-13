@@ -96,6 +96,13 @@ p, td, .caption, li {
 	height: 30px;
 }
 
+.navbar-nav{
+	flex-direction: row;
+	li.nav-item{
+		padding-right: 10px;
+	}
+}
+
 
 //Layout
 .container-lg {
