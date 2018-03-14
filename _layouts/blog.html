@@ -10,9 +10,28 @@
     <div class="page-content">
       <div class="wrapper container-md blog">
 
-		{{ content }}
+      	<h4>A collection of posts from my blog <a href="https://interprettounderstand.tumblr.com/">Interpret to Understand</a>, which includes notes and sketches from museums, books, and the natural world.</h4>
+      	
+        <ul class="row list-unstyled container-lg">
+          {% for post in site.categories.tumblr %}
+          <li class="tumblr-post">
+            <!--{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}-->
+            {{ post.content }}
 
-		 <script type="text/javascript" src="http://interprettounderstand.tumblr.com/js?start=0&num=6"></script>
+            <div class="tags">
+              {% for tag in post.tags %}
+                <span>
+                  {{ tag }}
+                </span>
+              {% endfor %}
+            </div>
+            <!--{%- if site.show_excerpts -%}
+              {{ post.excerpt }}
+            {%- endif -%}-->
+
+          </li>
+          {%- endfor -%}
+        </ul>
       </div>
     </div>
     {% include footer.html %}
