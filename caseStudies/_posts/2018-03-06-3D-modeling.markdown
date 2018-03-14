@@ -16,7 +16,7 @@ image: /assets/home-images/face-blue.png
 </div>
 
 ## Overview
-My team developed an Autodesk Maya Plugin to help animators learn how to model more recognizable facial expressions. I contributed 3D modeling in Maya, statistics in MATLAB, designed and carried out the user study, and wrote sections of the paper submitted to SIGGRAPH.
+My team at the Animation Research Lab at the UW developed an Autodesk Maya Plugin to help animators learn how to model more recognizable facial expressions. I contributed 3D modeling in Maya, statistics in MATLAB, designed and carried out the user study, and wrote sections of the paper submitted to SIGGRAPH.
 
 ## Psychology
 For this project, we sought to simplify the complicated and poorly understood behavior of facial expression recognition and classification.  To understand this process, I conducted a literature search on the psychology of facial expression recognition and its current applications in artificial intelligence.  My research informed the development of the prototype.
