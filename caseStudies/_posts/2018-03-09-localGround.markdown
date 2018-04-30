@@ -63,7 +63,7 @@ I recruited 5 users for our first round of testing. Research sessions included a
 * <span class = "bullet-lead">Fix Terminology: </span>We confirmed that some of our labeling terminology was confusing. While this design improved on the previous version, where icons were unlabeled, I began to conduct additional research on mapping and GIS terminology for inspiration.
 	
 
-## Iterations and Visual Desgin
+## Iterations and Visual Design
 
 Once we had validated the overall structure of the site, I started to prototype <span class = "skill">interaction</span> details and iterate on the <span class = "skill">visual design</span>. My team went out into the city of Berkeley and photographed public artwork. Using real data helps me design for the worst case scenarios, and resulted in an interesting mini project to present at the Local Ground workshop.
 
