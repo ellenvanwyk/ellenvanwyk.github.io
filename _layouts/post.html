@@ -8,7 +8,43 @@
     {% include navbar.html %}
 
     <div class="page-content">
+
+
       <div class="wrapper container-md article">
+
+      	<header>
+			<h1>
+				{{ page.title }}  
+			</h1>
+			<span>
+				{{ page.tagline }} 
+			</span>  
+			<div style="width: 30px;height: 8px;background: #5ea694;border-radius: 13px;margin-top: 12px;"></div>
+
+		</header>
+
+      	<div class="row">
+			<div class="col-sm-8">
+				<p>
+					{{ page.overview }}
+				</p>
+			</div>
+			<div class="col-sm-4">
+				<ul>
+				{% for tag in page.tags %}
+					<li>
+						{{ tag }}
+					</li>
+                {% endfor %}
+            	</ul>
+
+
+
+ 				{{ page.outside }}
+ 				        	
+			</div>
+		</div>    	
+      	
 
 		{{ content }}
 

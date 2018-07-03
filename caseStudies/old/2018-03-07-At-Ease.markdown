@@ -9,7 +9,6 @@ image: /assets/home-images/animatedfilm.png
 ---
 
 
-# At Ease Animated Short
 <img src = "/assets/home-images/film.png" style = "width:100%;">
 
 I led prop shading and contributed to modeling, concept design, and animation for the animated short At Ease, a product of the University of Washington's animation capstone.

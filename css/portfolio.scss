@@ -1,8 +1,8 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400');
+@import url('https://fonts.googleapis.com/css?family=Open_Sans:400,300,600,700,300italic,400italic,600italic,700italic');
 
 
 @import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
@@ -42,27 +42,31 @@
 @import "utilities";
 @import "print";
 
-
-//Typography
+/***********************************************************
+Typography
+***********************************************************/
 h1, h2, h3, h4, h5, h6{
-	font-family: "Montserrat";
 	color: #404040;
+	font-family: 'Rubik',sans-serif; 
 }
 
 body{
 	color: #212121;
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Rubik',sans-serif;
 	color: #212121;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 }
 
 p, td, .caption, li {
-  font-family: 'Open Sans';
-  font-size: 1em;
+  font-size: 18px;
   color: #404040;
   line-height: 150%;
   font-weight: 400;
+}
+
+h1{
+	font-size: 3rem;
 }
 
 .quote{
@@ -75,9 +79,11 @@ p, td, .caption, li {
 		margin-right: 3px;
 		color: #6a6a6a;
 		border-radius: 3px;
-		margin-top: 3px;
+		margin-top: 8px;
 		display: inline-block;
-		padding: 0 4px;
+		padding: 0 8px;
+		font-weight: 600;
+		font-size: 14px;
 	}
 }
 
@@ -103,8 +109,9 @@ p, td, .caption, li {
 	}
 }
 
-
-//Layout
+/***********************************************************
+Layout
+***********************************************************/
 .container-lg {
   max-width: 1300px;
   margin-right: auto;
@@ -139,7 +146,19 @@ p, td, .caption, li {
 
 //Article
 .article{
-	margin-top: 80px;
+	
+
+	header{
+		margin: 40px 0;
+		h1{
+			margin: 0;
+		}
+		span{
+			font-size: 24px;
+			color: #838383;
+			font-style: italic;
+		}
+	}
 
 	p img{
 		width: 100%;
@@ -169,10 +188,6 @@ p, td, .caption, li {
 		}
 	}
 
-	h1{
-		padding-bottom: 30px;
-	}	
-
 	h2{
 		margin: 50px 0 10px;
 		font-size: 1.6em;
@@ -182,15 +197,8 @@ p, td, .caption, li {
 	    height: 280px;
 	}
 
-	.right-panel {
-    float: right;
-    padding: 0 0 0 20px;
-    width: 33%;
-    margin: 0 0 20px 30px;
-
     img{
     	width: 100%;
-    }
 	}
 
 	.personas{
@@ -204,7 +212,7 @@ p, td, .caption, li {
 
 //Home
 .home {
-	margin-top: 80px;
+	margin-top: 40px;
 
 	h1{
 		font-size: 1.8em;
@@ -217,7 +225,7 @@ p, td, .caption, li {
 
 	.post-link{ 
 		img {
-			margin-bottom: .25em;
+			margin-bottom: 10px;
 
 			@include border-radius(4px);
 			@include transition(.2s);
@@ -343,6 +351,11 @@ p, td, .caption, li {
         background-color: rgba(0,0,0,0.035);
         background-repeat:no-repeat;
         background-position: center;
+        margin: 40px -40px;
+
+        .broswer-screenshot{
+        	box-shadow: 1px 3px 8px #C6C8CC;
+        }
     }
 
     .design-feature.localground{

@@ -4,20 +4,20 @@ title:  Code 510
 date:   2018-03-10 11:15:38 -0800
 tags:
   - Visual + UX Design
-  - Wordpress
+  - Wordpress/Web Development
   - Leadership
 image: /assets/home-images/code510.png
+tagline: Creative Coding space
+overview: Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I volunteered as a mentor and webmaster for 2 years.
 ---
 
-# Code 510
+<div class="design-feature">
+	<img class="broswer-screenshot" src = "/assets/code510/header.png" style = "width:100%;">
+</div>
 
-<div style="text-align: center; background-color: rgb(226, 227, 229);"><img class = "article-title-img" 
-src="/assets/home-images/code510.png"></div>
-## Overview
-
-Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I have volunteered as a mentor for Code 510 since Fall 2014 and have supported two game projects: one in <span class = "skill">Javascript</span> and one in 3D using <span class = "skill">Unity and Autodesk Maya</span>. I advise students in the areas of design, concept art, Maya, and code.
+During my time in Code 510 I supported two game projects: one in <span class = "skill">Javascript</span> and one in 3D using <span class = "skill">Unity and Autodesk Maya</span>. I advise students in the areas of design, concept art, Maya, and code.
 
 
-Recently I <span class = "skill">designed</span> and built the website to host Code 510&rsquo;s curriculum and outreach using <span class = "skill">Wordpress</span>. This was an opportunity to learn about customizing layout and fields in Wordpress and branding. I wanted to represent code 510 by making the site fresh, bright, and modern but not slick: the learning environment at Code 510 prioritizes process over product and self exploration over polish. 
+I also <span class = "skill">designed</span> and built the website to host Code 510&rsquo;s curriculum and outreach using <span class = "skill">Wordpress</span>. I wanted to represent code 510 by making the site fresh, bright, and modern, but also preserve the DIY spirit of Code 510
 
 <a href = "http://www.code510.org/"><i class="fa fa-arrow-circle-right"></i>Visit Code 510 site</a>

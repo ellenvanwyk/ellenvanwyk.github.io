@@ -1,27 +1,33 @@
 ---
 layout: post
+
 title:  Local Ground
+
 date:   2018-03-10 11:15:38 -0800
+
 tags:
   - UX
   - Visual + Front End Design
   - Research
   - HTML/CSS/JS
+
 image: /assets/home-images/localground.png
+
+overview: Local Ground is an open source tool for collaboratively creating map visualizations and stories built for an education research project at Berkeley. It features a combination of qualitative (photos, narrative), and quantitative (numerical) data to tell powerful stories and solve problems. Past Local Ground projects include <a href = 'http://dl.acm.org/citation.cfm?id=1926194'>youth led urban planning</a> and <a href = 'http://tap2k.org/papers/ICLS2016.pdf'>elementary school science</a>. 
+
+tagline: Story map builder for UC Berkeley education research
+
+
 ---
 
-# Local Ground Redesign
-<div style="text-align: center; background-color: rgb(226, 227, 229);"><img class = "article-title-img" src="/assets/home-images/localground.png"></div>
+<div class="design-feature">
+	<img class="broswer-screenshot" src = "/assets/LOCALGROUND/header2.png" style = "width:100%;">
+</div>
 
-## Overview
-
-Local Ground is an open source tool for creating map visualizations and stories as part of an education research project at Berkeley. I redesigned UI from beginning to end. This process includes <span class = "skill">user research, wireframing, visual and UX design, and HTML/CSS/JavaScript prototyping.</span> 
-
-Existing map making platforms either support qualitative (photos, writing, audio, drawings), or quantitative (numerical) data. With Local Ground, users can combine these data types, resulting in more powerful storytelling and a deeper understanding of the problem space. Our user groups include <a href = 'http://dl.acm.org/citation.cfm?id=1926194'>community organizations</a> and <a href = 'http://tap2k.org/papers/ICLS2016.pdf'>grade school classrooms</a>. 
-
-<a href = "http://people.ischool.berkeley.edu/~ejvw/lg-redesign/index.html"><i class="fa fa-arrow-circle-right"></i>Visit Local Ground Prototype</a>
 
 ## The Problem and Needs
+
+
 
 V1 of Local Ground had already been used for a few research projects. While the researchers had found that their users engaged with location data in novel ways, and served existing needs, the app had usability flaws that slowed down the process and interfered with learning goals.
 
@@ -49,11 +55,18 @@ When I felt comfortable with the existing product, usability issues, and landsca
 	
 * <span class = "bullet-lead">Use "Projects" to organize: </span>In the existing version, users switch between projects by turning on and off datasets, and the map preferences (such as map skin and center) are saved as cookies. I recommended making a separate page for each project to better facilitate work on a single project and fit common mental models.
 
+Below is an iteration of the wireframe for choosing styles of sites, like a powerpoint presentation.
+<div class = "design-feature localground">
+	<img src="/assets/LOCALGROUND/wireframe.png" style="margin: 40px;width:calc(100% - 80px);">
+</div>
+
+	
 ## Choosing a Prototyping Tool
 
-Once our team had aligned on the structure of the site, I began to prototype the interaction details. I chose <span class = "skill">HTML/CSS/Javascript</span> because I knew that prototyping software becomes slow and difficult to use with complex systems, and because the CSS could be used in the implementation phase.
+Once our team had aligned on the structure and we had validated it with some key users, I began to prototype the interaction details. I chose <span class = "skill">HTML/CSS/Javascript</span> because I knew that prototyping software becomes slow and difficult to use with complex systems.
 
-<a href = "http://people.ischool.berkeley.edu/~ejvw/lg-redesign/index.html"><i class="fa fa-arrow-circle-right"></i>Visit Local Ground Prototype</a>
+
+
 ## Initial User Testing
 
 I recruited 5 users for our first round of testing. Research sessions included an <span class = "skill">interview</span> on previous exposure to map making software and Local Ground, and then a series of <span class = "skill">tasks</span>. Our main findings included the following:
@@ -61,7 +74,9 @@ I recruited 5 users for our first round of testing. Research sessions included a
 * <span class = "bullet-lead">Improved workflow: </span>Overall, users who had experience with the old design found that the new design better foregrounded the tasks they needed to complete.
 	
 * <span class = "bullet-lead">Fix Terminology: </span>We confirmed that some of our labeling terminology was confusing. While this design improved on the previous version, where icons were unlabeled, I began to conduct additional research on mapping and GIS terminology for inspiration.
-	
+
+
+
 
 ## Iterations and Visual Design
 
@@ -78,10 +93,6 @@ I completed a second round of usability testing with 5 participants who had a ra
 	<img src="/assets/LOCALGROUND/wireframe-3.png" style="width:80%;margin: auto;padding: 20px 0 40px;" alt = "illustration showing the original popup and then the proposed right panel ">
 </div>
 	
-* <span class = "bullet-lead">Visible Modes: </span>Local Ground must support creating different visual interpretations of one crowd-sourced datset. Previously, the option for switching between visualization modes was nested under a tab. After talking to a design mentor, I realized that it had to be visible at the top level, and to achieve this I would have to restructure the site. This also worked well some new information that one of our users liked being able to create a map using raw photos. By keeping media and sites in different tabs, the problem of photos cluttering a map could be avoided. While users did not catch on to the structure as quickly, during testing, we believe the segmentation of tasks will make it usable in the long term. For more detail, please see the site map below.
-	
-
-<img src = "/assets/LOCALGROUND/site-map-stuff.svg" style = "padding:20px 0 40px;margin:0 -20px;">
 
 <p class = "desktop" style = "margin-bottom:40px;">Below are some pages from the current iteration of the prototype
 <div id = "lg-map-view" class = "design-feature localground" title = "IMAGE: SITS TAB  In this view, users can edit their data, including media, in bulk. Media and sites can be presented as either a card or spreadsheet view"></div>

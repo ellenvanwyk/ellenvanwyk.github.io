@@ -9,13 +9,11 @@ tags:
 image: /assets/home-images/face-blue.png
 ---
 
-# Animation Research Lab
 
 <div style="text-align: center;" class = "faces-grad">
 	<img src="/assets/home-images/face-w.png" alt="face" class="img-tile" style="padding: 30px 10px;height: 200px;width: auto;">
 </div>
 
-## Overview
 My team at the Animation Research Lab at the UW developed an Autodesk Maya Plugin to help animators learn how to model more recognizable facial expressions. I contributed 3D modeling in Maya, statistics in MATLAB, designed and carried out the user study, and wrote sections of the paper submitted to SIGGRAPH.
 
 ## Psychology

@@ -1,22 +1,26 @@
 ---
 layout: post
-title:  Design Research
+
+title:  Design Fiction Research
+
 date:   2018-03-10 11:15:38 -0800
+
 tags:
   - Illustration
+  - Mockups
+  - Research
+
 image: /assets/home-images/circlefutures.png
+
+tagline: Imagining the future of surveillance with UC Berkeley researchers
+
+overview: I worked with a design team to create illustrations and mockups of different technologies included in our paper submission which was accepted to [CSCW 2018](https://dl.acm.org/citation.cfm?doid=3171581.3134746). 
+
 ---
 
-# Design Research
-<div style="text-align: left; background-color: #e6e7e7;"><img class = "article-title-img" 
-src = "/assets/home-images/circlefutures.png" style = "margin:0;"></div>
-
-## Overview
-
-I worked with a design team to creat illustrations and mockups of different technologies included in our paper submission which was accepted to [CSCW 2018](https://dl.acm.org/citation.cfm?doid=3171581.3134746). 
 <div class = "row">
-	<div class = "col-sm-4">
-		<img src = "/assets/fiction/seechange1-2.png" alt = "drawing of a woman wearing a small spherical device on her shirt">
+	<div class = "col-sm-3">
+		<img src = "/assets/fiction/amazon-child-chip.png" alt = "drawing of a hand holding a small implantable device">
 	</div>
 	<div class = "col-sm-4">
 		<img src = "/assets/fiction/amazon-child-phone.png" alt = "drawing of a hand holding a phone with a profile, a map, and feed on its screen">

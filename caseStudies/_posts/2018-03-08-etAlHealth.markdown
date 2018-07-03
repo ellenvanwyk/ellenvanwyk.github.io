@@ -1,36 +1,45 @@
 ---
 layout: post
+
 title:  et al Health
+
 date:   2018-03-10 11:15:38 -0800
+
 tags:
   - UX
   - Visual + Front End Design
   - Research
   - HTML/CSS
+
 image: /assets/home-images/etal.png
+
+tagline: Connecting folks with rare diseases to qualified specialists
+
+overview: et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. We placed 3rd in our Big Ideas at Berkeley category. We also won the Berkeley I School Chen award, which recognizes innovative Master&rsquo;s thesis work.
+
 ---
 
-# et al Health
-<img 
-src = "/assets/home-images/etal-header.png" style = "width:100%;">
-
-## Overview
-
-et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. I led <span class = "skill">visual and front end design</span> and conducted <span class = "skill">user interviews</span> and <span class = "skill">competitive analysis</span>. et al Health placed 3rd in our Big Ideas at Berkeley category. We also won the Berkeley I School Chen award, which recognizes innovative Master&rsquo;s thesis work.
+<div class="design-feature">
+  <img class="broswer-screenshot" src = "/assets/etalhealth/header.png" style = "width:100%;">
+</div>
 
 
 
 ## Identifying A Need
 
-<figure  class = "right-panel">
-	<img src="/assets/etalhealth/flowchart.png" alt = "flow chart of et al health data" >
-	 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
-</figure>
+<div class="row">
+  <div class = "col-sm-8"> 
+    <p>Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.</p>
+    <p>I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.</p>
+  </div>
+  <figure class = "col-sm-4">
+  	<img src="/assets/etalhealth/flowchart.png" alt = "flow chart of et al health data" >
+  	 <figcaption class = "center"><span>Diagram of information flow in et al Health.</span></figcaption>
+  </figure>
+
+</div>
 
 
-Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.
-
-I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.
 
 ## Testing Our Assumptions
 
