@@ -400,18 +400,27 @@ footer{
 }
 
 .amaze-grad{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#bc9dd7+0,dccae3+100 */
-    background: #bc9dd7; /* Old browsers */
-    background: -moz-linear-gradient(left, #bc9dd7 0%, #dccae3 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, #bc9dd7 0%,#dccae3 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, #bc9dd7 0%,#dccae3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bc9dd7', endColorstr='#dccae3',GradientType=1 ); /* IE6-9*/
+
+	margin-bottom: 40px;
+	
+	div{
+		height: 50px;
+		background-size: 50px;
+		background-repeat: no-repeat;
+
+		&.ice{
+			background-image: url("../assets/amaze/ice.png");
+		}
+		&.stone{
+			background-image: url("../assets/amaze/stone.png");
+		}
+		&.bush{
+			background-image: url("../assets/amaze/bush.png");
+		}
+	}
 }
-.img-tile {
-    width: 100px;
-    padding: 50px 10px 60px;
-    display: inline-block;
-}
+
+
 
 
 li.tumblr-post{
