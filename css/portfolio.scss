@@ -167,6 +167,8 @@ Layout
 	.next img,
 	.prev img{
 		height: 100px;
+		width: auto;
+		@include border-radius(4px);
 	}
 
 
@@ -402,7 +404,7 @@ footer{
 .amaze-grad{
 
 	margin-bottom: 40px;
-	
+
 	div{
 		height: 50px;
 		background-size: 50px;

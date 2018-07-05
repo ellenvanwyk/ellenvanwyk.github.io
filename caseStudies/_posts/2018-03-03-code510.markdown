@@ -7,7 +7,7 @@ tags:
   - Wordpress/Web Development
   - Leadership
 image: /assets/home-images/code510.png
-tagline: Creative Coding space
+tagline: After school creative coding space
 overview: Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I volunteered as a mentor and webmaster for 2 years.
 ---
 
