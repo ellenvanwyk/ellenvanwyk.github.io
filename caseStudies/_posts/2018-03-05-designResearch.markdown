@@ -14,7 +14,7 @@ image: /assets/home-images/circlefutures.png
 
 tagline: Imagining the future of surveillance with UC Berkeley researchers
 
-overview: I worked with a design team to create illustrations and mockups of different technologies included in our paper submission which was accepted to [CSCW 2018](https://dl.acm.org/citation.cfm?doid=3171581.3134746). 
+overview: I worked with a design team to create illustrations and mockups of different technologies included in our paper submission which was accepted to CSCW 2018. 
 
 ---
 
