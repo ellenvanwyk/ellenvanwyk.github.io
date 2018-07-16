@@ -133,6 +133,14 @@ Layout
 	}
 }
 
+.spaced-icons .col{
+	padding: 40px 50px 60px;
+}
+
+
+.article-feature{
+    margin: 40px -40px;
+}
 
 //Nav
 
@@ -192,7 +200,7 @@ Layout
 
 	h2{
 		margin: 50px 0 10px;
-		font-size: 1.6em;
+		font-size: 1.8em;
 	}
 
 	.article-title-img {
@@ -386,6 +394,7 @@ footer{
 		a{
 			margin: 10px 10px 20px;
 			display: inline-block;
+			font-size: 2rem;
 		}
 }
 

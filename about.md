@@ -2,19 +2,23 @@
 layout: about
 title: About
 permalink: /about/
-image: /assets/profile_3.png
+skills:
+  - Adobe Photoshop and Illustrator
+  - Sketch
+  - HTML and CSS
+  - Autodesk Maya
+  - Git
+  - Certified Natural Science Illustrator
+
 ---
 
-I&rsquo;m a UX designer and recent graduate of UC Berkeley&rsquo;s School of Information Master&rsquo;s program, where I focused on HCI. Currently I live in the LA area and create systems engineering tools. I interned at Amazon.com in Amazon Marketing Services and before grad school researched tools for 3D animators.
+#### I deliver end to end design solutions, including user research, interactive prototypes, and visual design in code
 
-I discovered my passion for UX after working in cognitive science and visual arts. Now, my background in academic research and visual communication drives my user research and design practice. I&rsquo;m interested in opportunities to design beautiful products that simplify complicated information systems, and respond to both user and business needs.
+#### I value teamwork and have experience as a solo designer working closely with developers and managers to deliver the best solution for users
 
-## Skills and Software
-* Adobe Photoshop and Illustrator
-* Sketch
-* HTML and CSS
-* MATLAB
-* Autodesk Maya
-* Statistics
-* Git
-* Certified Natural Science Illustrator
+#### I'm comfortable with technical domains and evangelizing designer
+
+Currently I live in the LA area and create systems engineering tools. My background in academic research and visual communication drives my user research and design practice.  I studied UX and information systems at UC Berkeley. I interned at Amazon.com in Amazon Marketing Services and before grad school researched tools for 3D animators.
+
+
+
