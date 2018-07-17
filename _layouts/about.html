@@ -9,7 +9,6 @@
 
 		<div class="page-content">
 			<div class="wrapper container-lg">
-				<h1>About</h1>
 				<div class="row">
 					<div class="col-sm-4">
 						<img src="/assets/itsme.jpg">
@@ -25,18 +24,13 @@
 							<a href = "https://www.linkedin.com/in/ellen-van-wyk-2441b387">
 								<i class="fab fa-linkedin-in"></i>
 							</a>
-							<a href = "http://interprettounderstand.tumblr.com/">
-								<i class="fab fa-tumblr"></i>
-							</a>
-							<p>
-								<a href = "/vanwykResume.pdf">
-									<i class="fas fa-file"></i>Resume
-								</a>
-							</p>
 						</div>
+						<a class="btn btn-primary" href = "/vanwykResume.pdf">
+							<i class="fas fa-file"></i>Resume
+						</a>
 					</div>
 					<div class="col-sm-8">
-						{{ content }}
+						{{ content }}				
 						<h4>Skills</h4>
 						<ul>
 						{% for skill in page.skills %}

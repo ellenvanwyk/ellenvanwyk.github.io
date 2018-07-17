@@ -142,6 +142,11 @@ Layout
     margin: 40px -40px;
 }
 
+.page-content{
+	min-height: 100vh;
+	margin-top: 50px;
+}
+
 //Nav
 
 .navbar{
@@ -157,7 +162,6 @@ Layout
 	
 
 	header{
-		margin: 40px 0;
 		h1{
 			margin: 0;
 		}
@@ -257,10 +261,6 @@ Layout
 //Blog
 
 .blog{
-
-	&.container-md{
-		margin-top: 50px;
-	}
 
 	.tumblr_posts{
 		list-style: none;
@@ -380,7 +380,8 @@ Layout
 
 footer{
 	text-align:center;
-	margin: 40px 40px 100px;
+	padding: 40px 40px 100px;
+	background: #fafafa;
 
 	a{
 		margin:10px;
