@@ -8,14 +8,13 @@ date:   2018-03-10 11:15:38 -0800
 tags:
   - UX
   - Visual + Front End Design
-  - Research
   - HTML/CSS
 
 image: /assets/home-images/etal.png
 
 tagline: Connecting folks with rare diseases to qualified specialists
 
-overview: et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. We placed 3rd in our Big Ideas at Berkeley category. We also won the Berkeley I School Chen award, which recognizes innovative Master&rsquo;s thesis work.
+overview: et al health is a search engine to help people with rare diseases find a qualified specialist. Our algorithm recommends doctors based on their academic research activity. et al Health won the UC Berkeley I School Chen award, which recognizes innovative Master&rsquo;s thesis work.
 
 ---
 
@@ -93,17 +92,16 @@ Since users bring a wide range of skills and knowledge to our site, it was impor
   </tr>
 </table> 
 
- I illustrated the proto personas and contributed to their development
 
 ## Interview Key Findings
 
 
-* <span class = "bullet-lead">Rare Diseases are more complicated than we had imagined:  </span>Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
+* **Rare Diseases are more complicated than we had imagined:** Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
 	
 
-* <span class = "bullet-lead">No simple quality signal:  </span>Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.
+* **No simple quality signal:** Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.
 
-* <span class = "bullet-lead">Prioritize accessibility:  </span>Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.
+* **Prioritize accessibility:** Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.
 
 
 ## Wireframes
@@ -119,9 +117,9 @@ We approached UI design by first quickly hand sketching multiple divergent site 
 
 After conducting six usability tests, we learned the following:
 
-* <span class = "bullet-lead">Use progressive disclosure:  </span>The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
-* <span class = "bullet-lead">Add comfort with doctor photos:  </span>Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.
-* <span class = "bullet-lead">Stay honest:  </span>After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.
+* **Use progressive disclosure:** The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
+* **Add comfort with doctor photos:** Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.
+* **Stay honest:** After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.
 
 ## Visual Design
 
