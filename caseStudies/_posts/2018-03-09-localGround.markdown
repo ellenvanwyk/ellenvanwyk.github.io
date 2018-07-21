@@ -1,10 +1,8 @@
 ---
 layout: post
-
 title:  Local Ground
-
 date:   2018-03-10 11:15:38 -0800
-
+type: casestudy
 tags:
   - UX
   - Visual + Front End Design

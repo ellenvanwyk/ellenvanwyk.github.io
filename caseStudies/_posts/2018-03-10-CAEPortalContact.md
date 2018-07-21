@@ -2,6 +2,7 @@
 layout: post
 title:  OpenCAE Portal
 date:   2018-03-10 11:15:38 -0800
+type: casestudy
 tags:
   - Front End Design and Development
   - Branding

@@ -51,18 +51,22 @@
 		<hr class="article-fin">
 
 		<div class="PageNavigation clearfix">
-		  {% if page.next.url %}
-		    <a class="next" href="{{page.next.url}}">
-		    	<img src="{{page.next.image}}">
-		    	<h3> &laquo;{{page.next.title}}</h3>
-		    </a>
-		  {% endif %}
-		  {% if page.previous.url %}
-		    <a class="prev" href="{{page.previous.url}}">
-		    	<img src="{{page.previous.image}}">
-		    	<h3>{{page.previous.title}}&raquo; </h3>
-		   	</a>
-		  {% endif %}
+			{% if page.next.type == "casestudy" %}
+				{% if page.next.url %}
+					<a class="next" href="{{page.next.url}}">
+						<img src="{{page.next.image}}">
+						<h3> &laquo;{{page.next.title}}</h3>
+					</a>
+				{% endif %}
+			{% endif %}
+			{% if page.previous.type == "casestudy" %}
+				{% if page.previous.url %}
+				    <a class="prev" href="{{page.previous.url}}">
+				    	<img src="{{page.previous.image}}">
+				    	<h3>{{page.previous.title}}&raquo; </h3>
+				   	</a>
+			 	{% endif %}
+			 {% endif %}
 		</div>
       </div>
     </div>
