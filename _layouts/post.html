@@ -19,7 +19,7 @@
 			<span>
 				{{ page.tagline }} 
 			</span>  
-			<div style="width: 30px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0;"></div>
+			<div style="width: 30px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
 
 		</header>
 
@@ -37,6 +37,8 @@
 					</li>
                 {% endfor %}
             	</ul>
+
+            	for <b> {{ page.where }}</b>
 
 
 
@@ -72,4 +74,5 @@
     </div>
     {% include footer.html %}
   </body>
+	{% include analytics.html %}
 </html>
