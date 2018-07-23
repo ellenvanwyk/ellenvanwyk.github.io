@@ -7,12 +7,16 @@ tags:
   - Illustration
   - Mockups
   - Research
-
+where: UC Berkeley School of Information
 image: /assets/home-images/circlefutures.png
 
 tagline: Imagining the future of surveillance with UC Berkeley researchers
 
-overview: I worked with a design team to create illustrations and mockups of different technologies included in our paper submission which was accepted to CSCW 2018. 
+overview: I worked with a research team to create illustrations and mockups of different technologies. We propose these design workbooks as a tool for corporations and engineers to reflect on values and guide privacy related product decisions. Our work on this topic was accepted to DIS 2017 and CHI 2018.
+
+outsideurl: https://dl.acm.org/citation.cfm?id=3064682
+
+outsidetitle: DIS '17 Paper
 
 ---
 

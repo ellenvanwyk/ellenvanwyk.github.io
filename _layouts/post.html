@@ -19,7 +19,7 @@
 			<span>
 				{{ page.tagline }} 
 			</span>  
-			<div style="width: 30px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
+			<div style="width: 50px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
 
 		</header>
 
@@ -29,8 +29,10 @@
 					{{ page.overview }}
 				</p>
 			</div>
-			<div class="col-sm-4">
-				<ul>
+			<div class="col-sm-4">	
+
+                <h4>Role</h4>
+				<ul class="role-list">
 				{% for tag in page.tags %}
 					<li>
 						{{ tag }}
@@ -38,12 +40,22 @@
                 {% endfor %}
             	</ul>
 
-            	for <b> {{ page.where }}</b>
-
-
-
  				{{ page.outside }}
- 				        	
+ 				        
+
+				{% if page.outsideurl %}
+					<h4>
+						<a href="{{ page.outsideurl }}">
+							<i class="fas fa-arrow-circle-right"></i>
+							{% if page.outsidetitle %}
+								{{ page.outsidetitle }}
+							{% else %}
+								Visit Project
+							{% endif %}
+						</a>
+					</h4>
+                {% endif %}	
+
 			</div>
 		</div>    	
       	
@@ -56,16 +68,18 @@
 			{% if page.next.type == "casestudy" %}
 				{% if page.next.url %}
 					<a class="next" href="{{page.next.url}}">
+						<div><i class="fas fa-arrow-circle-left"></i></div>
 						<img src="{{page.next.image}}">
-						<h3> &laquo;{{page.next.title}}</h3>
+						<h3>{{page.next.title}}</h3>
 					</a>
 				{% endif %}
 			{% endif %}
 			{% if page.previous.type == "casestudy" %}
 				{% if page.previous.url %}
 				    <a class="prev" href="{{page.previous.url}}">
+						<div><i class="fas fa-arrow-circle-right"></i></div>
 				    	<img src="{{page.previous.image}}">
-				    	<h3>{{page.previous.title}}&raquo; </h3>
+				    	<h3>{{page.previous.title}}</h3>
 				   	</a>
 			 	{% endif %}
 			 {% endif %}

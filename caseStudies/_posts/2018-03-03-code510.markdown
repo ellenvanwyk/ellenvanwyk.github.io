@@ -7,9 +7,11 @@ tags:
   - Visual + UX Design
   - Wordpress/Web Development
   - Leadership
+where: UC Berkeley
 image: /assets/home-images/code510.png
 tagline: After school creative coding space
 overview: Code 510 is an after school program where youth from the East bay can find mentorship for their self driven projects and learn computing skills. I volunteered as a mentor and webmaster for 2 years.
+outsideurl: http://www.code510.org/
 ---
 
 <div class="design-feature">
@@ -20,5 +22,3 @@ During my time in Code 510 I supported two game projects: one in <span class = "
 
 
 I also <span class = "skill">designed</span> and built the website to host Code 510&rsquo;s curriculum and outreach using <span class = "skill">Wordpress</span>. I wanted to represent code 510 by making the site fresh, bright, and modern, but also preserve the DIY spirit of Code 510
-
-<a href = "http://www.code510.org/"><i class="fa fa-arrow-circle-right"></i>Visit Code 510 site</a>
