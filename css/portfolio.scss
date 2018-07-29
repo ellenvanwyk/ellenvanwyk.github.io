@@ -47,7 +47,8 @@ Typography
 ***********************************************************/
 h1, h2, h3, h4, h5, h6{
 	color: #404040;
-	font-family: 'Rubik',sans-serif; 
+	font-family: 'Rubik',sans-serif;
+	font-weight: 600; 
 }
 
 body{
@@ -161,7 +162,7 @@ hr.article-fin{
 //Nav
 
 .navbar{
-	background-color: rgba(255,255,255,0.9);
+	background-color:  white;
 	border-bottom: 2px solid rgba(0,0,0,0.07);
 	padding-left: 40px;
 	padding-right: 40px;
@@ -250,7 +251,7 @@ hr.article-fin{
 		    text-align: center;
 		    font-size: 16px;
 		    color: #7d7d7d;
-
+		    background: white;
 		}
 	}
 }
@@ -390,15 +391,22 @@ hr.article-fin{
 
     .design-feature{
         background-size: 860px auto;
-        background-color: rgba(0,0,0,0.035);
         background-repeat:no-repeat;
         background-position: center;
         margin: 40px -60px;
-        border-radius: 3px;
+		@include border-radius(4px);
 
         .broswer-screenshot{
         	box-shadow: 1px 3px 8px #C6C8CC;
         }
+    }
+
+    .design-feature-split.row{
+    	margin: 40px 0 40px -75px;
+
+    	img{
+    		@include border-radius(4px);
+    	}
     }
 
     .design-feature.localground{
