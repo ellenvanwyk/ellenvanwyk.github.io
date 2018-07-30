@@ -7,6 +7,7 @@ tags:
   - Front End Design and Development
   - Branding
   - UX Research
+where: JPL NASA
 image: /assets/home-images/cae-portal.png
 tagline: Technology and support for rocket scientists
 overview: Computer Aided Engineering (CAE) provides software to JPL engineers. Our tool download site needed to be simplified and upgraded. I led research and design, and implemented the look and feel.
@@ -16,23 +17,23 @@ overview: Computer Aided Engineering (CAE) provides software to JPL engineers. O
 <div class="row article-feature personas">
 	<div class="col">
 		<img src="/assets/portal/experienced.png">
-		<p class="quote-bubble">"I just want to download tools and I want them to work"</p>
+		<p class="quote-bubble">&ldquo;I just want to download tools and I want them to work&rdquo;</p>
 	</div>
 	<div class="col">
 		<img src="/assets/portal/support.png">
-		<p class="quote-bubble">"I make sure everything is running smoothly"</p>
+		<p class="quote-bubble">&ldquo;I make sure everything is running smoothly&rdquo;</p>
 	</div>
 	<div class="col">
 		<img src="/assets/portal/manager.png">
-		<p class="quote-bubble">"I'm responsible for the technology decisions"</p>
+		<p class="quote-bubble">&ldquo;I&rsquo;m responsible for the technology decisions&rdquo;</p>
 	</div>
 	<div class="col">
 		<img src="/assets/portal/howcanhelp.png">
-		<p class="quote-bubble">"What can CAE do for me?"</p>
+		<p class="quote-bubble">&ldquo;What can CAE do for me?&rdquo;</p>
 	</div>
 	<div class="col">
 		<img src="/assets/portal/ech.png">
-		<p class="quote-bubble">"What's CAE?"</p>
+		<p class="quote-bubble">&ldquo;What's CAE?&rdquo;</p>
 	</div>
 </div>
 

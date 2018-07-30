@@ -6,6 +6,7 @@ type: casestudy
 tags:
   - Illustration
   - Animation
+where: Game Jam
 image: /assets/home-images/amaze.png
 tagline: Compete to build the best maze
 overview: Anton Holmberg and I designed a game in less than a day for the 2014 UC Berkeley UPE Game Jam. Anton designed the gameplay and developed the app while I animated and illustrated the graphics. Amaze won 3rd place in the game jam with over 20 teams.

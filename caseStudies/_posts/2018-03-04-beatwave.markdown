@@ -7,6 +7,7 @@ tags:
   - UX Design + Research
   - Storyboarding
   - Prototyping
+where: UC Berkeley HCI Class
 categories: UX Design + Research, Illustration
 image: /assets/home-images/beatwave.png
 
