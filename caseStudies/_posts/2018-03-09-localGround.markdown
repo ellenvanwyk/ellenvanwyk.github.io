@@ -31,10 +31,24 @@ outsidetitle: Interactive Prototype
 
 
 
-V1 of Local Ground had already been used for a few research projects. While the researchers had found that their users engaged with location data in novel ways, and served existing needs, the app had usability flaws that slowed down the process and interfered with learning goals. They also wanted to expand the capabilities to support storytelling better.
+V1 of Local Ground had already been used for a few research projects. While the researchers had found that their users engaged with location data in novel ways, and served existing needs, the app had usability issues that slowed down the process and interfered with learning goals. They also wanted to expand the capabilities to support storytelling better.
+
+<div class="design-feature">
+	<img src = "/assets/LOCALGROUND/localground-usecases.png">
+</div>
+
+Clockwise from left: 
+* **[Five Dollar Challenge:](http://www.code510.org/yri/fdc/#)** where NPR listeners across the country submitted their five dollar meals to compare food prices across the country.
+* **[Elementary Science:](http://tap2k.org/papers/ICLS2016.pdf)** Students conducted a biology experiment. They measured soil moisture and compared that with the numbers and kinds of bugs they found, as a way of building spatial reasoning and learning about correlation.
+* **[Participatory GIS:](http://tap2k.org/papers/localground_dev10.pdf)** where high schoolers documented their experiences with their community as part of a park designing project. 
+
 
 ## Heuristic Evaluation + Research
+<div class="row design-feature-split">
+  <div class = "col-sm-6">
 
+  </div>
+ </div>
 
 
 <div class="row design-feature-split">
