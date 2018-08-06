@@ -37,10 +37,10 @@ V1 of Local Ground had already been used for a few research projects. While the 
 	<img src = "/assets/LOCALGROUND/localground-usecases.png">
 </div>
 
-Clockwise from left: 
-* **[Five Dollar Challenge:](http://www.code510.org/yri/fdc/#)** where NPR listeners across the country submitted their five dollar meals to compare food prices across the country.
+Use cases clockwise from left: 
+* **[Five Dollar Challenge:](http://www.code510.org/yri/fdc/#)** NPR listeners across the country submitted their five dollar meals to compare food prices across the country.
 * **[Elementary Science:](http://tap2k.org/papers/ICLS2016.pdf)** Students conducted a biology experiment. They measured soil moisture and compared that with the numbers and kinds of bugs they found, as a way of building spatial reasoning and learning about correlation.
-* **[Participatory GIS:](http://tap2k.org/papers/localground_dev10.pdf)** where high schoolers documented their experiences with their community as part of a park designing project. 
+* **[Participatory GIS:](http://tap2k.org/papers/localground_dev10.pdf)** High schoolers documented their experiences with their community as part of a park designing project. 
 
 
 ## Heuristic Evaluation + Research

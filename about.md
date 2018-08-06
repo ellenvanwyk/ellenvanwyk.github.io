@@ -18,7 +18,9 @@ skills:
 
 #### I'm comfortable with technical domains and evangelizing design
 
-Currently I live in the LA area and create systems engineering tools. My background in academic research and visual communication drives my user research and design practice.  I studied UX and information systems at UC Berkeley. I interned at Amazon.com in Amazon Marketing Services and before grad school researched tools for 3D animators.
+Currently I live in the LA area and create systems engineering tools. My background in academic research, neuroscience, and visual communication drives my user research and design practice.  
+
+I studied UX and information systems at UC Berkeley. I interned at Amazon.com in Amazon Marketing Services and before grad school researched tools for 3D animators.
 
 
 
