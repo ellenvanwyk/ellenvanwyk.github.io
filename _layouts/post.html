@@ -19,48 +19,52 @@
 			<span>
 				{{ page.tagline }} 
 			</span>  
-			<div style="width: 50px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
-
-		</header>
-
-      	<div class="row">
-			<div class="col-sm-8">
-				<p>
-					{{ page.overview }}
-				</p>
+			<div>
+				<div style="display:inline-block;width: 40px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
+				<div style="display:inline-block;width: 8px;height: 8px;background: #5ea694;border-radius: 13px;margin: 12px 0 32px;"></div>
 			</div>
-			<div class="col-sm-4">	
 
-                <h4>Role</h4>
-				<ul class="role-list">
-				{% for tag in page.tags %}
-					<li>
-						{{ tag }}
-					</li>
-                {% endfor %}
-            	</ul>
 
- 				{{ page.outside }}
- 				        
+	      	<div class="row">
+				<div class="col-sm-8">
+					<p>
+						{{ page.overview }}
+					</p>
+				</div>
+				<div class="col-sm-4">	
 
-				{% if page.outsideurl %}
-					<h4>
-						<a href="{{ page.outsideurl }}">
-							<i class="fas fa-arrow-circle-right"></i>
-							{% if page.outsidetitle %}
-								{{ page.outsidetitle }}
-							{% else %}
-								Visit Project
-							{% endif %}
-						</a>
-					</h4>
-                {% endif %}	
+	                <h4>Role</h4>
+					<ul class="role-list">
+					{% for tag in page.tags %}
+						<li>
+							{{ tag }}
+						</li>
+	                {% endfor %}
+	            	</ul>
 
-			</div>
-		</div>    	
-      	
+	 				{{ page.outside }}
+	 				        
 
-		{{ content }}
+					{% if page.outsideurl %}
+						<h4>
+							<a href="{{ page.outsideurl }}">
+								<i class="fas fa-arrow-circle-right"></i>
+								{% if page.outsidetitle %}
+									{{ page.outsidetitle }}
+								{% else %}
+									Visit Project
+								{% endif %}
+							</a>
+						</h4>
+	                {% endif %}	
+
+				</div>
+			</div>    	
+      	</header>
+
+      	<div class="article-body">
+			{{ content }}
+		</div>
 
 		<hr class="article-fin">
 

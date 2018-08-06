@@ -12,7 +12,7 @@ where: UC Berkeley Research
 
 image: /assets/home-images/localground.png
 
-overview: Local Ground is an open source tool for collaboratively creating map visualizations and stories built for an education research project at Berkeley. It features a combination of qualitative (photos, narrative), and quantitative (numerical) data to tell powerful stories and solve problems. Past Local Ground projects include <a href = 'http://dl.acm.org/citation.cfm?id=1926194'>youth led urban planning</a> and <a href = 'http://tap2k.org/papers/ICLS2016.pdf'>elementary school science</a>. 
+overview: Local Ground is an open source tool for collaboratively creating map visualizations and stories built for an education research project at Berkeley. It features a combination of qualitative (photos, narrative, hand drawings overlaid on the map), and quantitative (numerical) data to tell powerful stories and solve problems. Past Local Ground projects include <a href = 'http://dl.acm.org/citation.cfm?id=1926194'>youth led urban planning</a> and <a href = 'http://tap2k.org/papers/ICLS2016.pdf'>elementary school science</a>. 
 
 tagline: Story map builder for UC Berkeley education research
 
