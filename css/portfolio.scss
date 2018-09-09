@@ -70,11 +70,6 @@ p, td, .caption, li {
   font-weight: 400;
 }
 
-@include media-breakpoint-up(lg) {
-	h1{
-		font-size: 3rem;
-	}
-}
 
 .quote{
 	font-style: italic;
@@ -123,14 +118,27 @@ Layout
   max-width: 1300px;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px;
 }
 
 .container-md {
   max-width: 820px;
   margin-right: auto;
   margin-left: auto;
-  padding: 40px 20px;
+	padding: 20px;
+}
+
+
+@include media-breakpoint-up(md) {
+	.container-lg{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 20px;
+	}
+
+	.container-md{
+  	padding-top: 40px;
+  	padding-bottom: 40px;
+	}
 }
 
 .col-sm-4,
@@ -181,8 +189,8 @@ Nav
 .navbar{
 	background-color:  white;
 	border-bottom: 2px solid rgba(0,0,0,0.07);
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
 	box-shadow: 1px 1px 5px 0 rgba(234, 234, 234, 0.2);
 }
 
@@ -280,10 +288,15 @@ Home
 .home {
 
 	h1{
-		font-size: 1.8em;
+		font-size: 1.5em;
 		line-height: 1.5em;
 	}
 
+	@include media-breakpoint-up(md) {
+		h1{
+			font-size: 1.8em;
+		}
+	}
 	.post{
 		margin-bottom: 40px;
 	}
@@ -524,7 +537,7 @@ li.tumblr-post{
 	vertical-align: middle;
 	border-style: none;
 	margin: 40px auto 40px auto;
-	max-width: 400px;
+	max-width: 540px;
 	text-align: center;
 	img{
 		width: 100%;
