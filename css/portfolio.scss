@@ -46,7 +46,7 @@
 Typography
 ***********************************************************/
 h1, h2, h3, h4, h5, h6{
-	color: #323232;
+	color: #4d4d4d;
 	font-family: 'Rubik',sans-serif;
 }
 
@@ -121,7 +121,7 @@ Layout
 }
 
 .container-md {
-  max-width: 820px;
+  max-width: 920px;
   margin-right: auto;
   margin-left: auto;
 	padding: 20px;
@@ -149,7 +149,7 @@ Layout
 }
 
 .spaced-icons .col{
-	padding: 40px 50px 60px;
+	padding: 20px 20px 50px;
 }
 
 
@@ -276,6 +276,24 @@ Nav
 		    font-size: 16px;
 		    color: #7d7d7d;
 		    background: white;
+		}
+	}
+
+	.personas-lg{
+		h4{
+			font-weight: bold;
+			margin-top: 3rem;
+			border-bottom: 2px solid #d3d3d3;
+			padding-bottom: 6px;
+			margin-bottom: 0;
+
+			span{
+				font-weight: 300;
+			}
+		}
+		.row{
+			padding-top: 1.3rem;
+			background: #f5f5f5;
 		}
 	}
 }
@@ -426,11 +444,12 @@ Wireframes
       background-size: 860px auto;
       background-repeat:no-repeat;
       background-position: center;
-      margin: 40px -60px;
+      margin: 40px -100px;
 			@include border-radius(4px);
 
       .broswer-screenshot{
       	box-shadow: 1px 3px 8px #C6C8CC;
+				@include border-radius(5px);
       }
     }
 
@@ -448,7 +467,7 @@ Wireframes
 
 
     .design-feature-split.row{
-    	margin: 40px 0 40px -75px;
+    	margin: 40px 0 40px -100px;
 
     	img{
     		@include border-radius(4px);
@@ -487,11 +506,22 @@ About
 ***********************************************************/
 
 
-.link-icon{
-	margin: 10px 10px 20px;
-	display: inline-block;
-	font-size: 2rem;
+.vcard{
+
+	svg{
+		font-size: 2rem;
+		margin-right: 10px;
+	}
+
+	td{
+		padding-top: 10px;
+	}
+
+	td:first-child{
+		text-align:center;
+	}
 }
+
 
 
 
@@ -531,8 +561,6 @@ Amaze
 }
 
 
-
-
 li.tumblr-post{
 	vertical-align: middle;
 	border-style: none;
@@ -544,4 +572,135 @@ li.tumblr-post{
 	}
 }
 
+
+
+/***********************************************************
+Add PE Button
+***********************************************************/
+
+
+.mms-add-pe-button {
+
+
+	.dropdown-toggle::after {
+		display: none;
+	}
+
+  /*** Add PE dropdown ***/
+
+  /*Border radius and color to match dropdown*/
+  a.dropdown-toggle{
+    @include border-radius(4px 0 0 4px);
+    border: 2px solid transparent;
+    color: #d3d3d3;
+    vertical-align: unset;
+    float:left;
+  }
+
+  //Padding, font size, and line height match for the toggle and dropdown
+  a.dropdown-toggle,
+  .dropdown-menu a{
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  /*Special line-height so icons align*/
+  .dropdown-menu a::before,
+  a.dropdown-toggle .fa{
+    line-height: 1.5;
+  }
+
+  /*Special horizontal dropdown menu */
+  .dropdown-menu {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    @include border-radius(0 4px 4px 0);
+    border-color: darken($white, 12%);
+    @include box-shadow( 6px 6px 12px rgba(0,0,0,.175));
+    margin: 0;
+    float: none;
+    @include box-shadow( 6px 6px 12px rgba(0,0,0,.175));
+    border: 2px solid darken(white, 12%);
+
+    /*line to indicate where the presentation element will be added
+    &::after{
+      background-image: url(../assets/location-feedback-inline.svg);
+      content: ' ';
+      background-size: 70px 4px;
+      height: 4px;
+      width: 70px;
+      background-repeat: no-repeat;
+      position: absolute;
+      right: -70px;
+      top: 13px;
+    }*/
+
+    /*Horizontal menu that should be more consistent across browsers*/
+    li{
+      display: inline-block;
+      a{
+        padding-left: 14px;
+        padding-right: 14px;
+        display: inline-block;
+        line-height: 150%;
+      }
+    }
+    li:last-child{
+    	border-left: 2px solid darken(white, 12%);    	
+    }
+  }
+
+  /*When hovering over the whole menu, set opacity to block*/
+  .open > .dropdown-menu,
+  .dropdown-toggle:hover + .dropdown-menu,
+  span:hover .dropdown-menu{
+    display: inline-block;
+  }
+
+  /*When hovering over button or opening toggle, darken text and background to show activated*/
+  span:hover a.dropdown-toggle,
+  .open > a.dropdown-toggle,
+  .open > a.dropdown-toggle:hover{
+    background-color: darken(white, 10%);
+    border-color: darken(white, 12%);
+    color: darken(#d3d3d3, 42%);
+    position: relative;
+    z-index: 100;	
+  }
+}
+
+.add-pe-button-container{
+	position: relative;
+	hr {
+	  opacity: 0;
+	  border: none;
+	  border-top: 3px dotted #4A90E2;
+	  height: 0px;
+	  margin: 0px;
+	  position: absolute;
+	  top: 50%;
+	  width: 100%;
+	  @include transition(.2s);
+	}
+}
+
+.add-pe-button-container:hover hr {
+  opacity: 1; 
+}
+
+mms-view-section .add-pe-button-container hr {
+  left: 31px;
+  bottom: 18px;
+  position: relative;
+  width: calc(100% - 31px);
+}
+
+/*set pseudoclass and reset italic from <i>*/
+.section-icon::before{
+  content:"\00a7";
+  font-style: normal;
+  font-weight: bold;
+  font-family: "Rubik";
+}
 
