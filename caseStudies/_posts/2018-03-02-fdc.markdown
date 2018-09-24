@@ -12,7 +12,7 @@ overview: My research team at Berkeley worked with Youth Radio and NPR to make a
 outsideurl: http://www.code510.org/yri/fdc/
 ---
 
-
-<img style="margin: 30px auto;text-align: center;width:100%;" 
-src="/assets/fdc-main.png" alt = "#5DollarChallenge: Youth Radio and NPR asked for the best meals you could find in your town for $5 or less. From breakfast tacos to banh mi sandwiches, here are some of our favorites.">
+<div class="design-feature">
+	<img style="margin: 30px auto;text-align: center;width:100%;" src="/assets/fdc-main.png" alt = "#5DollarChallenge: Youth Radio and NPR asked for the best meals you could find in your town for $5 or less. From breakfast tacos to banh mi sandwiches, here are some of our favorites.">
+</div>
 

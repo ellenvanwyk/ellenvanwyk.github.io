@@ -26,15 +26,11 @@ overview: et al health is a search engine to help people with rare diseases find
 
 ## Identifying A Need
 
-<div class="row design-feature-split">
-  <figure class = "col-sm-6">
-  	<img src="/assets/etalhealth/flowchart.png" style="padding:20px;" alt = "flow chart of et al health data" >
-  </figure>
-  <div class = "col-sm-6"> 
-    <p>Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.</p>
-    <p>I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.</p>
-  </div>
-</div>
+Currently the NIH recommends finding a rare disease doctor by searching PubMed for doctors who actively research the disease and contacting them. A data scientist in our master&rsquo;s program saw an opportunity to simplify this process for patients, some of whom may have never encountered academic research before.
+
+I joined his team, excited by the challenge of translating scientific journals into an acessible form, and the opportunity to help the rare disease community, which includes 30 million Americans.
+
+<img src="/assets/etalhealth/flowchart.png" style="padding:20px;max-width: 400px;" alt = "flow chart of et al health data" >
 
 
 
@@ -96,25 +92,26 @@ Since users bring a wide range of skills and knowledge to our site, it was impor
 ## Interview Key Findings
 
 
-* **Rare Diseases are more complicated than we had imagined:** Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
+### Rare Diseases are more complicated than we had imagined
+Many rare diseases have subtypes, which adds yet another layer of complexity. For example, Castleman has 4 different subtypes. Initially, we hoped to be able to include keywords such as subtypes, demographics, and symptoms, but we discovered there was no feasible data solution. Later versions of the designs do include subtypes, which our data scientists were able to accommodate.  
 	
 
-* **No simple quality signal:** Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.
+### No simple quality signal
+Different users want to see different signals of doctor quality, including funding source, methods, symptoms researched, and number of papers published. I accommodated this by exposing all the available information about the publications on the profile page.
 
-* **Prioritize accessibility:** Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.
+### Prioritize accessibility
+Some of our interviewees had limited mobility and energy, meaning the site should be very easy to use and accessible.
 
 
 ## Sketching and Design Iterations
 
-<div class="row design-feature-split">
-  <figure class = "col-sm-8">
-    <img src="/assets/etalhealth/sketching-2.jpg" alt = "wireframes and rating on the whiteboard" >
-  </figure>
-  <div class = "col-sm-4"> 
-    <p>We approached UI design by first quickly hand sketching multiple divergent site layouts. We identified the strengths of each and I began to create wireframes in Sketch.</p>
-    <p>These went through several iterations, and I made an InVision prototype out of the pages to conduct our first round of usability testing.</p>
-  </div>
-</div>
+
+We approached UI design by first quickly hand sketching multiple divergent site layouts. We identified the strengths of each and I began to create wireframes in Sketch.
+
+<img src="/assets/etalhealth/sketching-2.jpg" alt = "wireframes and rating on the whiteboard" >
+
+These went through several iterations, and I made an InVision prototype out of the pages to conduct our first round of usability testing.
+
 
 ## Wireframes and Testing
 
@@ -125,9 +122,14 @@ Since users bring a wide range of skills and knowledge to our site, it was impor
 
 After conducting six usability tests, we learned the following:
 
-* **Use progressive disclosure:** The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
-* **Add comfort with doctor photos:** Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.
-* **Stay honest:** After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.
+### Use progressive disclosure
+The parent and patient personas found the publications impressive, trust inspiring, and overwhelming. This suggests that progressive disclosure of the article abstract can help us maintain transparency and approachability while accommodating all our personas.
+
+### Add comfort with doctor photos
+Adding doctor photos will involve overhead, but multiple patients appreciated photos because they added a layer of certainty and comfort in an otherwise confusing and unpredictable process.
+
+### Stay honest
+After asking many doctors and patients what they expected the doctor rating to indicate, no obvious solution emerged. The rating has the potential to communicate the wrong message and unfairly malign doctors. We are continuing to research how to message and compute rating or whether we should include it at all.
 
 ## Visual Design
 

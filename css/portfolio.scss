@@ -1,8 +1,8 @@
 ---
 ---
 
-@import url('https://fonts.googleapis.com/css?family=Rubik:400');
-@import url('https://fonts.googleapis.com/css?family=Open_Sans:400,300,600,700,300italic,400italic,600italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800,800i');
 
 
 @import "../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
@@ -45,28 +45,70 @@
 /***********************************************************
 Typography
 ***********************************************************/
+
+
 h1, h2, h3, h4, h5, h6{
 	color: #4d4d4d;
-	font-family: 'Rubik',sans-serif;
 }
 
 .article-body{
-	h1, h2, h3, h4, h5, h6{	
+	h1, h3, h4, h5, h6{	
 		margin-top: 2rem;
 	}
+}
+.article-body h2{
+	font-weight: 600;
+	margin-top: 3rem;
+	font-size: 2rem;
+}
+
+@include media-breakpoint-up(md) {
+	.article-body>p,
+	.article-body>ul
+	.article-body>img,
+	.article-body>h3,
+	.article-body>ul,
+	.article-body>span{
+		width: 66%;
+		margin-left: 33%;
+	}
+
+	.article-body h2+p,
+	.article-body h2+h3,
+	.article-body p+h2,
+	.article-body div+h2,
+	.article-body img+h2,
+	.article-body ul+h2,
+	.article-body table+h2{
+		padding-top: 9rem;
+		margin-top:0;
+	}
+
+	.article-body>h2{
+		width: 33%;
+		float: left;
+		margin-top: 0;
+		padding-right: 18px;
+		font-size: 2.25rem;
+	}
+}
+
+.article-body>h3{
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 body{
 	color: #212121;
-	font-family: 'Rubik',sans-serif;
+	font-family: 'Rubik', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-text-size-adjust: 100%;
 }
 
 p, td, .caption, li {
-  font-size: 18px;
+  font-size: 19px;
   color: #404040;
-  line-height: 150%;
+  line-height: 1.6em;
   font-weight: 400;
 }
 
@@ -171,16 +213,6 @@ hr.article-fin{
 	border-width: 2px;
 }
 
-.change-illustration{
-	text-align: center;
-
-	img{
-			max-width:450px;
-			margin: auto;
-			padding: 20px 0 40px;
-		}
-}
-
 
 /***********************************************************
 Nav
@@ -202,6 +234,7 @@ Nav
 	header{
 		h1{
 			margin: 0;
+			font-size: 3.25em;
 		}
 		span{
 			font-size: 24px;
@@ -249,10 +282,6 @@ Nav
 		a h3{
 			text-decoration: none;
 		}
-	}
-
-	h2{
-		margin: 60px 0 10px;
 	}
 
 	.article-title-img {
@@ -444,7 +473,7 @@ Wireframes
       background-size: 860px auto;
       background-repeat:no-repeat;
       background-position: center;
-      margin: 40px -100px;
+      margin: 80px -100px;
 			@include border-radius(4px);
 
       .broswer-screenshot{
