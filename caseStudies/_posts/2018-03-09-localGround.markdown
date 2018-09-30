@@ -93,7 +93,7 @@ In the existing version, users switch between projects by turning on and off dat
 
 My team went out into the city of Berkeley and photographed public artwork. Using real data helps me design for the worst case scenarios, and resulted in an interesting mini project to present at the Local Ground workshop.
 
-Below are some key screens from the site.
+[An early version of wireframes in Sketch](https://invis.io/D9OBKC2KASG#/165639448_Desktop), which evolved into the following key screens from the site.
 
 <div class="design-feature">
 	<img src="/assets/LOCALGROUND/lg-prototype.png"  title="IMAGE: SITS TAB  In this view, users can edit their data, including media, in bulk. Media and sites can be presented as either a card or spreadsheet view">
