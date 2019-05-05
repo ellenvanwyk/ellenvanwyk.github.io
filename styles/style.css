@@ -1,0 +1,16 @@
+body{
+	font-family: 'Roboto Mono', monospace;
+	color: white;
+	background-image: linear-gradient(#02071D, #083C7C);
+	min-height: 100vh;
+	margin: 0;
+}
+
+h1{
+	font-weight: 400;
+}
+
+.container{
+	max-width: 800px;
+	margin:50px auto;
+}
