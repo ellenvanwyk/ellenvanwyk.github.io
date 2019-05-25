@@ -16,9 +16,10 @@
 
 	<div class="container">
 
-		<h1>Hello, my name is Ellen Van Wyk.</h1>
-		<h1>I design for JPL NASA and live in Los Angeles. I follow a user centered process to create tools and visualizations for System Engineers and spacecraft operators</h1>
+		<h1>Hello, I'm Ellen. I work with design, code, art, and society</h1>
+		<p>I design for JPL NASA and live in Los Angeles. I follow a user centered process to create tools and visualizations for engineers and spacecraft operators</p>
 		<p>Check out my <a target="blank" href="https://www.instagram.com/ellvanwyk/">art on instagram</a>, <a target="blank" href="https://github.com/ellenvanwyk/">code on Github</a>, or <a target="blank" href="vanwykResume.pdf">resume</a> while I update my portfolio.</p>
+		<p>You can contact me on <a href="https://www.linkedin.com/in/ellen-van-wyk-2441b387/" target = "blank">linkedin</a> or by email</p>
 
 		<canvas id="myCanvas" hidpi="on" resize></canvas>
 	</div>
@@ -27,65 +28,79 @@
 
 		paper.install(window)
 
+		//Trigonometry of 30 60 90 triangles
+		var long_leg = (1 *  Math.sqrt(3) /2)
+		var short_leg = 1/2;
+
+
 		function drawIsoSquare(square_width, square_depth, center_x, center_y){
-
-
 
 			diff_vert = (square_depth-square_width) /2;
 
-			console.log(diff_vert)
-
-
-
-			var hypotenuse = 1;
-			var long_leg = (1 *  Math.sqrt(3) /2)
-			var short_leg = 1/2;
 
 			//Draw isometric square at angle 30 degrees
 			var p_dx_vert = long_leg * diff_vert;
 			var p_dy_vert = short_leg*(square_depth -  diff_vert);
 
-
 			var p_dx_horz = long_leg * (square_depth -  diff_vert);
 			var p_dy_horz = short_leg * diff_vert;
 
 
-			var segments = [new Point(center_x + p_dx_vert, center_y - p_dy_vert), new Point(center_x + p_dx_horz, center_y - p_dy_horz),new Point(center_x - p_dx_vert, center_y + p_dy_vert), new Point(center_x - p_dx_horz, center_y + p_dy_horz)];
+
+
+			var segments = 
+				[new Point(center_x + p_dx_vert, center_y - p_dy_vert), 
+				new Point(center_x + p_dx_horz, center_y - p_dy_horz),
+				new Point(center_x - p_dx_vert, center_y + p_dy_vert), 
+				new Point(center_x - p_dx_horz, center_y + p_dy_horz),
+				new Point(center_x + p_dx_vert, center_y - p_dy_vert)];
 			var square = new Path(segments);
-			square.strokeColor = 'black';
-			project.activeLayer.lastChild.fillColor = 'red';
-
-
-
-
-
-			var circle =  new Path.Circle(new Point(center_x, center_y), 1);
-			circle.fillColor = 'blue';
-
-			var circle =  new Path.Circle(new Point(center_x + p_dx_vert, center_y - p_dy_vert), 1);
-			circle.fillColor = 'green';
-
+			square.strokeColor = 'white';
+			//project.activeLayer.lastChild.fillColor = 'white';
 			return square;
 
 
-			// //Draw isometric square at angle 30 degrees
-			// var p_dx = square_width *  Math.sqrt(3) /2;
-			// var p_dy = square_width/2	;
-			// var segments = [new Point(center_x, center_y + p_dy), new Point(center_x + p_dx, center_y),new Point(center_x, center_y - p_dy), new Point(center_x - p_dx, center_y), new Point(center_x, center_y + p_dy)];
-			// var square = new Path(segments);
-			// square.strokeColor = 'black';
-			// project.activeLayer.lastChild.fillColor = 'red';
-			// return square;
 		}
 
+
+
 		function drawIsoCube(cube_width, cube_center_x, cube_center_y){
+
+			colors = ["#fff", "rgba(0,0,0,0)", "#fff"];
+
 			for(i = 0; i < 3; i++){
 				rotation = 120;
 
-				var square = drawIsoSquare(cube_width/2, cube_center_x + cube_width/4, cube_center_y );
+				var square = drawIsoSquare(cube_width/2, cube_width/2, cube_center_x, cube_center_y );
 				var point = square.bounds.bottomCenter
 				square.rotate(i * rotation, point);
+				square.fillColor = colors[1]; // red
+				square.strokeColor = "white";
+				square.strokeJoin = 'round';
+				//idk why but translate down :/
+				square.translate(0, -cube_width/4)
 			}
+		}
+
+
+		function drawSolarArray(solar_panel_width, body_width, array_center_x, array_center_y, num_arrays){
+			panel_height = (solar_panel_width + body_width)/2;
+			panel_width = (solar_panel_width + body_width) * long_leg;
+
+			for(i=0; i<num_arrays; i++){
+				translate_panel = i/(num_arrays);
+				var square = drawIsoSquare(solar_panel_width/num_arrays, body_width, array_center_x + translate_panel * (panel_width), array_center_y + 	translate_panel  * panel_height )
+			}
+
+		}
+
+		function drawSatellite(body_width, solar_panel_width, satellite_centerx, satellite_centery){
+			rotation = 120;
+			var array1 = drawSolarArray(solar_panel_width, body_width, satellite_centerx - solar_panel_width /2, satellite_centery - body_width * 3/4, 4 );
+			// var panel1 = drawIsoSquare(solar_panel_width, body_width, satellite_centerx - (solar_panel_width + 1)/2, satellite_centery - body_width*3/4 );
+			drawIsoCube(body_width, satellite_centerx, satellite_centery);
+			var panel2 = drawIsoSquare(solar_panel_width, body_width, satellite_centerx + (solar_panel_width + 1)/2, satellite_centery + body_width*3/4 );
+			
 		}
 
 
@@ -93,16 +108,22 @@
 			// Setup directly from canvas id:
 			paper.setup('myCanvas');
 
-			var cube_width = 10;
+
+
+			var cube_width = 5;
 			var square_depth = 10
 			var cube_center_x = 100;
 			var cube_center_y = 100;
 			//drawIsoCube(cube_width, cube_center_x, cube_center_y)
-			drawIsoSquare( cube_width, square_depth, cube_center_x, cube_center_y)
+			//drawIsoSquare( cube_width, square_depth, cube_center_x, cube_center_y)
+			//drawIsoCube(30, 100, 100)
+			drawSatellite(30, 40, 100, 40)
+
+
 
 		});
 	</script>
-	<span style="position: fixed; bottom: 0;text-align: center;width: 100%;">Designed/implemented by me with paper.js</span>
+	<!-- <span style="position: fixed; bottom: 0;text-align: center;width: 100%;">Designed/implemented by me with paper.js</span> -->
 </html>
 
 
