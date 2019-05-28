@@ -7,122 +7,113 @@
         <script src="node_modules/jquery/dist/jquery.js"></script>
        	<script src="node_modules/paper/dist/paper-full.js"></script>
         <link rel="stylesheet" href="styles/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	</head>
 
 
 
 	<body>
 
-
+	<canvas id="myCanvas" hidpi="on" resize></canvas>
 	<div class="container">
 
-		<h1>Hello, I'm Ellen. I work with design, code, art, and society</h1>
+		<h1>Hello, I&rsquo;m Ellen. I&rsquo;m a UX designer who also codes and illustrates.</h1>
 		<p>I design for JPL NASA and live in Los Angeles. I follow a user centered process to create tools and visualizations for engineers and spacecraft operators</p>
-		<p>Check out my <a target="blank" href="https://www.instagram.com/ellvanwyk/">art on instagram</a>, <a target="blank" href="https://github.com/ellenvanwyk/">code on Github</a>, or <a target="blank" href="vanwykResume.pdf">resume</a> while I update my portfolio.</p>
-		<p>You can contact me on <a href="https://www.linkedin.com/in/ellen-van-wyk-2441b387/" target = "blank">linkedin</a> or by email</p>
 
-		<canvas id="myCanvas" hidpi="on" resize></canvas>
+		<span>
+			<a target="blank" href="https://www.instagram.com/ellvanwyk/"><i class="fab fa-instagram"></i></a>
+			<a target="blank" href="https://github.com/ellenvanwyk/"><i class="fab fa-github"></i></a>
+			 <a target="blank" href="vanwykResume.pdf"><i class="fas fa-file"></i></a>
+			 <a href="https://www.linkedin.com/in/ellen-van-wyk-2441b387/" target = "blank"> <i class="fab fa-linkedin"></i></a>
+			 <i class="fas fa-envelope"></i>
+
+
+		<div class=""></div>
+
+		<div class="la-left">
+		</div>
+		<div class="la-right">
+		</div>	
 	</div>
 
-	<script>
+<!-- 	<script>
+	//<script type="text/paperscript" canvas="myCanvas">
+		var resolution = 10;
+		var cloud_radius =2;
 
-		paper.install(window)
-
-		//Trigonometry of 30 60 90 triangles
-		var long_leg = (1 *  Math.sqrt(3) /2)
-		var short_leg = 1/2;
-
-
-		function drawIsoSquare(square_width, square_depth, center_x, center_y){
-
-			diff_vert = (square_depth-square_width) /2;
-
-
-			//Draw isometric square at angle 30 degrees
-			var p_dx_vert = long_leg * diff_vert;
-			var p_dy_vert = short_leg*(square_depth -  diff_vert);
-
-			var p_dx_horz = long_leg * (square_depth -  diff_vert);
-			var p_dy_horz = short_leg * diff_vert;
-
-
-
-
-			var segments = 
-				[new Point(center_x + p_dx_vert, center_y - p_dy_vert), 
-				new Point(center_x + p_dx_horz, center_y - p_dy_horz),
-				new Point(center_x - p_dx_vert, center_y + p_dy_vert), 
-				new Point(center_x - p_dx_horz, center_y + p_dy_horz),
-				new Point(center_x + p_dx_vert, center_y - p_dy_vert)];
-			var square = new Path(segments);
-			square.strokeColor = 'white';
-			//project.activeLayer.lastChild.fillColor = 'white';
-			return square;
-
-
-		}
-
-
-
-		function drawIsoCube(cube_width, cube_center_x, cube_center_y){
-
-			colors = ["#fff", "rgba(0,0,0,0)", "#fff"];
-
-			for(i = 0; i < 3; i++){
-				rotation = 120;
-
-				var square = drawIsoSquare(cube_width/2, cube_width/2, cube_center_x, cube_center_y );
-				var point = square.bounds.bottomCenter
-				square.rotate(i * rotation, point);
-				square.fillColor = colors[1]; // red
-				square.strokeColor = "white";
-				square.strokeJoin = 'round';
-				//idk why but translate down :/
-				square.translate(0, -cube_width/4)
-			}
-		}
-
-
-		function drawSolarArray(solar_panel_width, body_width, array_center_x, array_center_y, num_arrays){
-			panel_height = (solar_panel_width + body_width)/2;
-			panel_width = (solar_panel_width + body_width) * long_leg;
-
-			for(i=0; i<num_arrays; i++){
-				translate_panel = i/(num_arrays);
-				var square = drawIsoSquare(solar_panel_width/num_arrays, body_width, array_center_x + translate_panel * (panel_width), array_center_y + 	translate_panel  * panel_height )
-			}
-
-		}
-
-		function drawSatellite(body_width, solar_panel_width, satellite_centerx, satellite_centery){
-			rotation = 120;
-			var array1 = drawSolarArray(solar_panel_width, body_width, satellite_centerx - solar_panel_width /2, satellite_centery - body_width * 3/4, 4 );
-			// var panel1 = drawIsoSquare(solar_panel_width, body_width, satellite_centerx - (solar_panel_width + 1)/2, satellite_centery - body_width*3/4 );
-			drawIsoCube(body_width, satellite_centerx, satellite_centery);
-			var panel2 = drawIsoSquare(solar_panel_width, body_width, satellite_centerx + (solar_panel_width + 1)/2, satellite_centery + body_width*3/4 );
-			
-		}
-
-
-		$( document ).ready(function() {
 			// Setup directly from canvas id:
 			paper.setup('myCanvas');
+			paper.install(window)
+			// var values = {
+			// 	amount: 30
+			// };
+
+			var raster = new Raster('assets/cloud.png');
+			var cloud_pixels = new Group();
+			// Hide the raster:
+			raster.visible = false;
+
+			// As the web is asynchronous, we need to wait for the raster to load
+			// before we can perform any operation on its pixels.
+			raster.on('load', function() {
+				// Since the example image we're using is much too large,
+				// and therefore has way too many pixels, lets downsize it to
+				// 40 pixels wide and 30 pixels high:
+				raster.size = new Size(80, 60);
 
 
 
-			var cube_width = 5;
-			var square_depth = 10
-			var cube_center_x = 100;
-			var cube_center_y = 100;
-			//drawIsoCube(cube_width, cube_center_x, cube_center_y)
-			//drawIsoSquare( cube_width, square_depth, cube_center_x, cube_center_y)
-			//drawIsoCube(30, 100, 100)
-			drawSatellite(30, 40, 100, 40)
+				for (var y = 0; y < raster.height; y++) {
+					for(var x = 0; x < raster.width; x++) {
+						// Get the color of the pixel:
+						var color = raster.getPixel(x, y);
 
+						if (color.alpha > 0){
+							scale_radius=1;
+							if (color.alpha != 1){
+								//scale_radius = .5;
+							}
 
+							// Create a circle shaped path:
+							var path = new Path.Circle({
+								center: new Point(x* resolution, y * resolution),
+								radius: cloud_radius * scale_radius
+							});
 
-		});
-	</script>
+							// Set the fill color of the path to the color
+							// of the pixel:
+							path.fillColor = "white";
+
+							cloud_pixels.addChild(path)
+						}
+					}
+				}
+
+				// Move the active layer to the center of the view, so all 
+				// the created paths in it appear centered.
+				project.activeLayer.position = view.center;
+			});
+
+			// Move the active layer to the center of the view:
+			project.activeLayer.position = view.center;
+
+			console.log(cloud_pixels)
+			function onResize(event) {
+				// Whenever the window is resized, recenter the path:
+				cloud_pixels.position = view.center;
+				console.log("hii")
+			}
+			time = 0;
+			// function onFrame(event) {
+			// 	// Each frame, rotate the path by 3 degrees:
+			// 	if (time %80 ==0){
+			// 		cloud_pixels.position += new Point(10, 0);
+			// 	}
+			// 	console.log(time)
+			// 	time+=1;
+			// }
+
+	</script> -->
 	<!-- <span style="position: fixed; bottom: 0;text-align: center;width: 100%;">Designed/implemented by me with paper.js</span> -->
 </html>
 
