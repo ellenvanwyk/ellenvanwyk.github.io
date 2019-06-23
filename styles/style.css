@@ -20,7 +20,7 @@ body.sunset{
 }
 
 body.nighttime{
-	background-image: linear-gradient(#44597d, #4d599c);	
+	background-image: linear-gradient(#2c3151, #4e4f7b);	
 	color: white;
 }
 
@@ -40,13 +40,16 @@ a:hover,
 a:visited,
 a{color: #51486f;}
 
-body.nighttime
-	a:hover,
-	a:visited,
-	a{color: white;}
+body.nighttime a:hover,
+body.nighttime a:visited,
+body.nighttime a{color: white;}
 
 h1{
 	font-weight: 600;
+}
+
+p{
+	font-size: 16px;
 }
 
 .container{
@@ -57,26 +60,43 @@ h1{
 	position: relative;
 }
 
-.la-left{
-	background-image: url("../assets/leftmid.png");
-height: 323px;
-width: 473px;
-
-position: fixed;
-
-bottom: 0;
-
-left: 0;
-
-background-size: 100%;
-background-position: -153px;
-background-repeat: no-repeat;
+.la-mountains{
+	background-image: url("../assets/mountains.png");
+	height: 413px;
+	width: 2443px;
+	position: fixed;
+	bottom: 0;
+	left: -130px;
+	background-size: 100%;
+	background-position: -153px;
+	background-repeat: no-repeat;
+	opacity: .4;
 
 }
 
+.la-left{
+	background-image: url("../assets/palm-trees.png");
+	height: 393px;
+	width: 2443px;
+	position: fixed;
+	bottom: -20px;
+	left: -130px;
+	background-size: 100%;
+	background-position: -153px;
+	background-repeat: no-repeat;
+
+}
+
+body.nighttime .la-left{
+	background-image: url("../assets/palm-trees-night.png");
+}
+
+body.nighttime .la-mountains{
+	background-image: url("../assets/mountains-night.png");
+}
 
 .la-right{
-    background-image: url("../assets/la-right.png");
+    /*background-image: url("../assets/la-right.png");*/
     height: 253px;
     width: 280px;
     position: fixed;
@@ -92,8 +112,8 @@ background-repeat: no-repeat;
 	background: #28203D;
 	opacity: .5;
 	position: fixed;
-height: 100px;
-bottom: 0;
-width: 100%;
-height: 16px;
+	height: 100px;
+	bottom: 0;
+	width: 100%;
+	height: 16px;
 }

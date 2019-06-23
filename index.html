@@ -28,38 +28,68 @@
 	<canvas id="myCanvas" hidpi="on" resize></canvas>
 	<div class="container">
 
-		<h1>Hello, I&rsquo;m Ellen. I&rsquo;m a UX designer who also codes and illustrates.</h1>
+		<h1>Hello, I&rsquo;m Ellen. I&rsquo;m a UX designer who focuses on data visualization and illustration.</h1>
 		<p>I design for JPL NASA and live in Los Angeles. I follow a user centered process to create tools and visualizations for engineers and spacecraft operators</p>
+		<p id="what-im-doing"></p>
 
 		<span style="font-size:28px;">
 			<a target="blank" href="https://www.instagram.com/ellvanwyk/"><i class="fab fa-instagram"></i></a>
 			<a target="blank" href="https://github.com/ellenvanwyk/"><i class="fab fa-github"></i></a>
 			 <a href="https://www.linkedin.com/in/ellen-van-wyk-2441b387/" target = "blank"> <i class="fab fa-linkedin"></i></a>
 
+	</div>
 
 		<div class=""></div>
+		<div class="la-mountains"></div>
+		<div class="la-left"></div>
+		<div class="la-right"></div>	
 
-		<div class="la-left">
-		</div>
-		<div class="la-right">
-		</div>	
-	</div>
+
+
 
 <script>
 
 
 $( document ).ready(function() {
+
+	var actions = [
+		"sleeping.",
+		"taking the bus to work.",
+		"at work.",
+		"taking the bus home.",
+		"doing art ."
+	]
+	var weekdays = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday"]
+
 	var today = new Date();
-	now_hour = today.getHours() 
-	console.log(now_hour)
-	if (now_hour > 20 || now_hour <= 5){
+	nowHour = today.getHours() 
+	nowMinutes = today.getMinutes()
+	nowDay = today.getDay();
+
+	//nowHour =7
+	var helloText = "It's "+ nowHour + ":"+ nowMinutes+ " on " +weekdays[nowDay]+ " in Los Angeles. I'm probably "
+
+
+	// $( "body" ).addClass("sunset")
+	if (nowHour > 20 || nowHour <= 5){
 		$( "body" ).addClass("nighttime")
-	} else if (19 <= now_hour <= 20) {
+		helloText = helloText.concat(actions[0])
+	} else if (19 <= nowHour && nowHour <= 20) {
 		$( "body" ).addClass("sunset")
-	} else if (5 < now_hour < 19) {
+		helloText = helloText.concat(actions[4])
+	} else if (5 < nowHour && nowHour < 19) {
 		$( "body" ).addClass("daytime")
+		helloText = helloText.concat(actions[2])
 	}
 
+	// $("#what-im-doing").text(helloText)
 });
 </script>
 
