@@ -16,7 +16,6 @@
         <title>Ellen Van Wyk</title>
 
         <script src="node_modules/jquery/dist/jquery.js"></script>
-<!--        	<script src="node_modules/paper/dist/paper-full.js"></script> -->
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	</head>
@@ -73,9 +72,11 @@ $( document ).ready(function() {
 	nowMinutes = today.getMinutes()
 	nowDay = today.getDay();
 
+
+
 	//nowHour =7
 	var helloText = "It's "+ nowHour + ":"+ nowMinutes+ " on " +weekdays[nowDay]+ " in Los Angeles. I'm probably "
-
+var nowHour = 8
 
 	// $( "body" ).addClass("sunset")
 	if (nowHour > 20 || nowHour <= 5){
