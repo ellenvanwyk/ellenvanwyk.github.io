@@ -12,7 +12,8 @@ body.sunrise{
 }
 
 body.daytime{
-	background-image: linear-gradient(#E4EEFF, #FFEAEA);	
+	background-image: linear-gradient(#7CACFF 20%, #FCFFF5);
+	color: #3c3b59;
 }
 
 body.sunset{
@@ -43,6 +44,11 @@ a{color: #51486f;}
 body.nighttime a:hover,
 body.nighttime a:visited,
 body.nighttime a{color: white;}
+
+
+body.daytime a:hover,
+body.daytime a:visited,
+body.daytime a{color: #3c3b59}
 
 h1{
 	font-weight: 600;
@@ -93,6 +99,15 @@ body.nighttime .la-left{
 
 body.nighttime .la-mountains{
 	background-image: url("../assets/mountains-night.png");
+}
+
+
+body.daytime .la-mountains{
+	background-image: url("../assets/mountains-day.png");
+	opacity: .6;
+}
+body.daytime .la-left{
+	background-image: url("../assets/palm-trees-day.png");
 }
 
 .la-right{
