@@ -1,134 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;00&display=swap');
+
 body{
-	font-family: 'Roboto Mono', monospace;
-	color: white;
+	font-family: 'Inter', sans-serif;
+/*	color: white;
 	min-height: 100vh;
 	margin: 0;
-	color: #51486f;
+	color: #cfcfff;
+	background: #06062d;*/
+	color: #262dc3;
+	background-color: #d7daff;
 }
 
 
-body.sunrise{
-	background-image: linear-gradient(#E4EEFF, #FFEAEA);	
+/*That's why we go to work to kick mroe ass together than we could by ourselves*/
+
+/*canvas {
+	top: 0;
+    position: fixed;
 }
+*/
 
-body.daytime{
-	background-image: linear-gradient(#B7D2FF 20%, #FCFFF5);
-	color: #3c3b59;
-}
-
-body.sunset{
-	background-image: linear-gradient(#E4EEFF, #FFEAEA);
-}
-
-body.nighttime{
-	background-image: linear-gradient(#2c3151, #4e4f7b);	
-	color: white;
-}
-
-
-
-
-#myCanvas{
-	position: fixed;
-	left: 0;
-	right: 0;
-    width:  100%;
-    height: 100%;
-    z-index:1;
-}
-
-a:hover,
 a:visited,
-a{color: #51486f;}
+a{
+	color: #262dc3;
+	text-decoration: none}
 
-body.nighttime a:hover,
-body.nighttime a:visited,
-body.nighttime a{color: white;}
+a:hover{color: #050b7b;}
 
-
-body.daytime a:hover,
-body.daytime a:visited,
-body.daytime a{color: #3c3b59}
 
 h1{
 	font-weight: 600;
 }
 
 p{
-	font-size: 16px;
+	line-height: 1.75rem;
+    /*letter-spacing: .015em;*/
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.contact-icons a{
+	margin-right: .25rem;
 }
 
 .container{
 	max-width: 600px;
 	margin: 0 auto;
-	padding: 50px 16px;
+	padding: 10px 16px;
 	z-index:10;
 	position: relative;
-}
-
-.la-mountains{
-	background-image: url("../assets/mountains.png");
-	height: 413px;
-	width: 2443px;
-	position: fixed;
-	bottom: -11px;
-	left: -130px;
-	background-size: 100%;
-	background-position: -153px;
-	background-repeat: no-repeat;
-	opacity: .4;
-
-}
-
-.la-left{
-	background-image: url("../assets/palm-trees.png");
-	height: 393px;
-	width: 2443px;
-	position: fixed;
-	bottom: -20px;
-	left: -130px;
-	background-size: 100%;
-	background-position: -153px;
-	background-repeat: no-repeat;
-
-}
-
-body.nighttime .la-left{
-	background-image: url("../assets/palm-trees-night.png");
-}
-
-body.nighttime .la-mountains{
-	background-image: url("../assets/mountains-night.png");
-}
-
-
-body.daytime .la-mountains{
-	background-image: url("../assets/mountains-day.png");
-	opacity: .6;
-}
-body.daytime .la-left{
-	background-image: url("../assets/palm-trees-day.png");
-}
-
-.la-right{
-    /*background-image: url("../assets/la-right.png");*/
-    height: 253px;
-    width: 280px;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-
-}
-
-.bkgrnd{
-	background: #28203D;
-	opacity: .5;
-	position: fixed;
-	height: 100px;
-	bottom: 0;
-	width: 100%;
-	height: 16px;
 }

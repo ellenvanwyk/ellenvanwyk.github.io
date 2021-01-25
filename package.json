@@ -18,6 +18,6 @@
   "homepage": "https://github.com/ellenvanwyk/ellenvanwyk.github.io#readme",
   "dependencies": {
     "jquery": "^3.4.1",
-    "paper": "^0.12.0"
+    "paper": "^0.12.11"
   }
 }
