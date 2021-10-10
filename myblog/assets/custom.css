@@ -1,0 +1,31 @@
+body,
+p{
+	font-size: 1.25rem;
+	line-height: 2.5rem;
+}
+
+.headline {
+    font-size: 4rem;
+}
+
+.color-white{
+	color: white;
+}
+
+.color-white-70{
+	color: rgba(255,255,255,0.7);
+}
+
+.bg-purple{
+	background: #3c3c6a;
+}
+
+a,
+a:hover,
+a:visited{
+	color: #3c3c6a;
+}
+
+.pt-6{
+	padding-top: 7rem;
+}

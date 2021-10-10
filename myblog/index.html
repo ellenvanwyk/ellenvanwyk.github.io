@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title }}</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="/bootstrap-4.6.0-dist/css/bootstrap.css">
+		<link rel="stylesheet" href="/assets/custom.css">
+	</head>
+	<body>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img style="width:60px" src="/assets/images/logo.png">
+			</a>
+			<ul class="nav ml-auto">
+			   {% for item in site.data.nav.docs %}
+		            <li class="nav-item">
+						<a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+					</li>
+			   {% endfor %}
+			</ul>
+		</nav>
+</body>
