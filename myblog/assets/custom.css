@@ -20,6 +20,16 @@ p{
 	background: #3c3c6a;
 }
 
+.bg-purple-lt{
+	/*background: #b3b3c869;*/
+}
+
+.border-purple-blend{
+	border-bottom: 21px solid;
+    border-bottom-color: currentcolor;
+	border-color: #b3b3c8;
+}
+
 a,
 a:hover,
 a:visited{
