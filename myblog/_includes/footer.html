@@ -1,11 +1,14 @@
 <div class="bg-purple pt-5 mt-5">
 	<footer class="container color-white">
 		<div class="row pb-5">
-			<a class="navbar-brand" href="/index.html"><img style="width:60px" src="/assets/images/logo.png"></a>
+			<div>
+				<a class="navbar-brand d-block" href="/index.html"><img style="width:60px" src="/assets/images/logo.png"></a>
+				<p class="color-white">Designed and developed in Jekyll by Ellen</p>
+			</div>
 			<ul class="nav ml-auto">
 			   {% for item in site.data.nav.docs %}
 		            <li class="nav-item">
-						<a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+						<a class="nav-link color-white" href="{{ item.url }}">{{ item.title }}</a>
 					</li>
 			   {% endfor %}
 			</ul>

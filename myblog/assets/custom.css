@@ -4,7 +4,7 @@
 body,
 p{
 	font-size: 1.125rem;
-	line-height: 2rem;
+	line-height: 1.5rem;
 	font-family: Inter
 }
 
@@ -14,6 +14,10 @@ p{
 
 .color-white{
 	color: white !important;
+}
+
+.color-purple{
+	color: #4b45be;
 }
 
 .color-white-70{
@@ -49,15 +53,54 @@ h6,
 {
 	font-family: "Montserrat";
 	font-weight: 800;
-	color:#4b45be;
 }
 
 a,
-a:hover,
 a:visited{
 	color: #4b45be;
 }
 
+a:hover{
+	color: #211c77;
+	text-decoration: none;
+}
+
 .pt-6{
 	padding-top: 7rem;
+}
+
+
+.access-contact{
+	text-transform: uppercase;
+	font-size: .8rem;
+	font-weight: bold;
+	letter-spacing: .1em;
+	background: #ebeaf8;
+	border-radius: 4px;
+	padding: 4px 8px;
+	white-space: nowrap;
+	/*margin-left: -8px;*/
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1080px
+}
+
+@media only screen and (min-width: 576px){
+	.mt--6{
+		margin-top: -60px;
+	}
+	.mt--7{
+		margin-top: -100px;
+	}
+	.empty-left{
+		 text-align: right;
+		 right:0;
+	}
+	.centered-element-sm {
+	  margin: 0;
+	  position: absolute;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
 }
