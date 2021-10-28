@@ -1,0 +1,61 @@
+I"U<h2 class="pt-5">Background and Motivations</h2>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>Currently, to analyze spacecraft performance, operators have to access data across a scattered range of silos. FSPA offers a suite of tools to centralize data and support common visualization use cases in a standard way. However, this approach hasn't been used on a mission before.</p> 
+	</div>
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/FSPABefore.png" /> 
+		<img class="img-fluid" src="/assets/images/FSPAAfter.png" /> 
+	</div>
+</div>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>While the tool State Manager for organizing data needs buy-in across the project, it had usability issues… Usability issues included confusion about the purpose of the State Manager tool</p>
+	</div>
+	<div class="col-sm-6"> 
+		<blockquote class="h1">&ldquo;I would get talking in that jargon and only me and the people I’m working with know what I mean but our customer may not. It could have been communicated more clearly… the state manager, what it means, state can mean a lot of things. &rdquo;</blockquote>
+	</div>
+</div>
+
+<h2 class="pt-5">Background Research</h2>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>I led a workshop to understand the general workflow and touchpoints with FSPA across the mission lifecycle. This identified some of the key use cases for interacting with the state manager include search in support of data visualizations. I also identified that we want a broad set of users to contribute to the state manager, and we need to make sure they will be comfortable with the navigation and terminology.</p>
+	</div>
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/FSPAWorkshop.png" /> 
+	</div>
+</div>
+
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/AtomicResearch.png" /> 
+	</div>
+	<div class="col-sm-6"> 
+		<p>By this point, I had collected a large volume of user research in our atomic research database. I used the vocabulary based tags to get an overall sense of our user bases ideas of the terminology. Based on that review, I identified that users didn't have a broad consensus of what &ldquo;State&rdquo;, and this could present a usability problem. I proposed a card sort activity with operators to understand their point of view.</p>
+	</div>
+</div>
+
+<h2 class="pt-5">Information Architecture</h2>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>I conducted a cart sort excersize with four operators, and summarized the results. I found that while the users agreed on an overall structure (by time, from uplink to downlink), they contrasted on a lot of categories. I found affinity groups in those as much as possible, and produced a new organization.</p>
+		<p>To evaluate the designs, I conducted usability tests with five operators where I asked them to try to find data types, and then had a more general discussion.</p>
+	</div>
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/SMBeforeAfter.png" /> 
+	</div>
+</div>
+
+<h2 class="pt-5">Results</h2>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>I confirmed that the new design from the card sort had more successful answers than the baseline design. During my discussions, operators labelled the cart sort design as in the "User's domain", while the baseline was "technical". Operators guessed more correct categories in the card sort based organization than the baseline version.</p>
+	</div>
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/StateManagerUI.png" /> 
+		<p>UI design</p>
+	</div>
+</div>
+
+:ET

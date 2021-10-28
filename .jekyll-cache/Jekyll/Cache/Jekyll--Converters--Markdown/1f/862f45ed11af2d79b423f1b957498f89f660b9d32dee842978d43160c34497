@@ -1,0 +1,19 @@
+I"�<h2 class="pt-5">Background and Motivations</h2>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>Currently, to analyze spacecraft performance, operators have to access data across a scattered range of silos. FSPA offers a suite of tools to centralize data and support common visualization use cases in a standard way. However, this approach hasn't been used on a mission before.</p> 
+	</div>
+	<div class="col-sm-6"> 
+		<img class="img-fluid" src="/assets/images/FSPABefore.png" /> 
+		<img class="img-fluid" src="/assets/images/FSPAAfter.png" /> 
+	</div>
+</div>
+<div class="row pb-5 mb-5">
+	<div class="col-sm-6"> 
+		<p>While the tool State Manager for organizing data needs buy-in across the project, it had usability issues… Usability issues included confusion about the purpose of the State Manager tool</p>
+	</div>
+	<div class="col-sm-6"> 
+		<blockquote class="h1">&ldquo;I would get talking in that jargon and only me and the people I’m working with know what I mean but our customer may not. It could have been communicated more clearly… the state manager, what it means, state can mean a lot of things. &rdquo;</blockquote>
+	</div>
+</div>
+:ET
