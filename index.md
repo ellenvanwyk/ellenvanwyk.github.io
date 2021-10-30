@@ -18,7 +18,7 @@ layout: home
 			<a href="https://www.linkedin.com/in/ellen-van-wyk-2441b387/" target="_blank">
 				<i class="h2 mr-4 bi bi-linkedin"></i>
 			</a>
-			<a href="/vanwykResume.pdf">
+			<a href="/VanwykResume.pdf">
 				<i class="h2 mr-4 bi bi-file-earmark-text-fill"></i>
 			</a>
 		</div>
