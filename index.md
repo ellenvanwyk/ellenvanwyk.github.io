@@ -4,8 +4,6 @@
 
 layout: home
 ---
-{% include header.html %}
-{% include navbar.html %}
 
 
 <div class="container">

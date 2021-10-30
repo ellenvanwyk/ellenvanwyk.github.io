@@ -103,4 +103,7 @@ a:hover{
 	  top: 50%;
 	  transform: translateY(-50%);
 	}
+	.ml--4-sm {
+		left: -40px;
+	}
 }
