@@ -1,0 +1,10 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light font-weight-bold bg-transparent">
+	<a class="navbar-brand" href="/index.html"><img style="width:60px" src="/assets/images/logo.png"></a>
+	<ul class="nav ml-auto">
+	   {% for item in site.data.nav.docs %}
+            <li class="nav-item">
+				<a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+			</li>
+	   {% endfor %}
+	</ul>
+</nav>
