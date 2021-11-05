@@ -95,7 +95,7 @@ a:hover{
 @media only screen and (min-width: 576px){
 
 	.max-image-sm{
-	    max-width: auto;
+	    max-width: unset;
 	}
 
 
