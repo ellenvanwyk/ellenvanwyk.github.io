@@ -24,36 +24,35 @@ layout: home
 		</div>
 		<!-- <div class="col-md-1"></div> -->
 		<div class="col-lg-8">
-			<div class="row position-relative mt-5">
-				<div class=" col-sm-2"></div>
-				<div class=" col-sm-4">
-					<div class="centered-element-sm empty-left">
+			<div class="row position-relative mt-5 mb-4 mb-0-sm text-center text-left-sm">
+				<img class=" col-sm-5 max-image max-image-sm pb-2 pb-0-sm" alt="An illustration of an ipad with drawings on it" src="/assets/images/ipadSplash.png">
+				<div class=" col-sm-4 order-first-sm offset-2-sm">
+					<div class="centered-element-sm empty-left-sm text-sm-right">
 						<a href="mailto:ell.vanwyk@gmail.com" class="access-contact color-purple"><i class="bi bi-lock-fill pr-1"></i>Contact me for Access</a><br>
 						<b class="color-purple mb-0">Sketchnotes</b>
 						<p class="color-purple">Visual note taking</p>
 					</div>
 				</div>
-				<img class=" col-sm-5" alt="An illustration of an ipad with drawings on it" src="/assets/images/ipadSplash.png">
 			</div>
-			<div class="row position-relative mt--7">
-				<img class=" col-sm-8" alt="An illustration of a laptop showing a user interface with controls and a trajectory around a planet" src="/assets/images/opsForAutonomySplash.png">
+			<div class="row position-relative mt--7-sm mb-4 mb-0-sm text-center">
+				<img class=" col-sm-8 max-image max-image-sm pb-2 pb-0-sm" alt="An illustration of a laptop showing a user interface with controls and a trajectory around a planet" src="/assets/images/opsForAutonomySplash.png">
 				<div class=" col-sm-4 ml--4-sm">
-					<div class="centered-element-sm">
+					<div class="centered-element-sm text-sm-left">
 						<a href="mailto:ell.vanwyk@gmail.com" class="access-contact color-purple"><i class="bi bi-lock-fill pr-1"></i>Contact me for Access</a><br>
 						<b class="color-purple">Operations for Autonomy</b>
 						<p class="color-purple">Imagining the future of autonomous operations</p>
 					</div>
 				</div>
 			</div>
-			<div class="row position-relative mt--6">
-				<div class=" col-sm-6">
-					<div class="centered-element-sm text-right">
+			<div class="row position-relative mt--6-sm mb-4 mb-0-sm text-center">
+				<img class=" col-sm-6 max-image max-image-sm pb-2 pb-0-sm" src="/assets/images/infoArchSplash.png" alt="An illustration of sitemap scheme.">
+				<div class=" col-sm-6 order-first-sm">
+					<div class="centered-element-sm text-sm-right">
 						<a href="mailto:ell.vanwyk@gmail.com" class="access-contact color-purple"><i class="bi bi-lock-fill pr-1"></i>Contact me for Access</a><br>
 						<b class="color-purple">Europa Clipper Analysis</b>
 						<p class="color-purple">Making a new operations paradigm work for users</p>
 					</div>
 				</div>
-				<img class=" col-sm-6" src="/assets/images/infoArchSplash.png" alt="An illustration of sitemap scheme.">
 			</div>
 		</div>
 		<div class="col-sm-3">

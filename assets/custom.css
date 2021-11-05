@@ -5,7 +5,7 @@ body,
 p{
 	font-size: 1.125rem;
 	line-height: 1.5rem;
-	font-family: Inter
+	font-family:  Inter, 'sans-serif'
 }
 
 .headline {
@@ -51,7 +51,7 @@ h6,
 .h5,
 .h6
 {
-	font-family: "Montserrat";
+	font-family:  "Montserrat", 'sans-serif';
 	font-weight: 800;
 }
 
@@ -86,24 +86,58 @@ a:hover{
     max-width: 1080px
 }
 
+
+.max-image{
+    max-width: 330px;
+    margin: auto;
+}
+
 @media only screen and (min-width: 576px){
-	.mt--6{
-		margin-top: -60px;
+
+	.max-image-sm{
+	    max-width: auto;
 	}
-	.mt--7{
-		margin-top: -100px;
-	}
-	.empty-left{
+
+
+	.empty-left-sm{
 		 text-align: right;
 		 right:0;
 	}
+
+	/*Vertically centered text element for not small*/
 	.centered-element-sm {
 	  margin: 0;
 	  position: absolute;
 	  top: 50%;
 	  transform: translateY(-50%);
 	}
+
+	/*Responsive negative margin*/
 	.ml--4-sm {
 		left: -40px;
 	}
+
+	.mt--6-sm{
+		margin-top: -60px;
+	}
+
+	.mt--7-sm{
+		margin-top: -100px;
+	}
+
+	/*Bootstrap doesn't provide responsive ordering and offset */
+	.order-first-sm {
+	  -ms-flex-order: -1;
+	  order: -1;
+	}
+
+	.order-last-sm {
+	  -ms-flex-order: 13;
+	  order: 13;
+	}
+
+	.offset-2-sm {
+	  margin-left: 16.666667%;
+	}
+
 }
