@@ -28,9 +28,14 @@ p{
 	background: #4b45be;
 }
 
-.bg-purple-lt{
-	/*background: #b3b3c869;*/
+.bg-purple-10{
+	background-color: #f0eff9;
 }
+
+.page-height{
+	min-height: 100vh;
+}
+
 /*
 .border-purple-blend{
 	border-bottom: 21px solid;

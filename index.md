@@ -6,7 +6,7 @@ layout: home
 ---
 
 
-<div class="container">
+<div class="container page-height">
 	<div class="row">
 		<div class="col-lg-4 pt-6">
 			<h1 class="pb-2 color-purple">Hi! I'm Ellen <br> and I'm a user experience designer.</h1>
